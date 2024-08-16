@@ -9,6 +9,18 @@
     <!-- no más de 165 carácteres -->
     <!-- cada documento de cada sección de nuestro sitio web deben tener diferentes meta
         descripciones y titulos-->
+
+        <!-- #2 Ejemplo de estilos CSS en HTML, con la etiqueta Style-->
+    
+    <style>
+        h3 {
+            color:crimson
+        }
+    </style>
+
+        <!-- #3 Ejemplo de Estilos CSS en HTML, con LINK (la mejor practicca)-->
+    
+        <link rel="stylesheet" href="assets/css/styles.css">  <!--Enlazamos nuestro archivo CSS con nuestro HTML-->
 </head>
 
 <body>
@@ -36,18 +48,18 @@
 
     <h3><u>Encabezados</u></h3>
     <!-- Encabezados -->   
-    <h4>Etiquetas <u>&lt;h1&gt;</u> y sucesivamente hasta el <u>&lt;h6&gt;</u></h4>
+    <h4>Etiquetas <u class="e">&lt;h1&gt;</u> y sucesivamente hasta el <u class="e">&lt;h6&gt;</u></h4>
     <!-- Utilizo código difente para colocar los "picoparentesis" porque colocarlos asi nomas no me permitiria
         añadirlos porque VS me los interpreta como etiquetas a utilizar--> 
 
     <h1>Encabezado de nivel 1</h1> <!-- Solo debe haber un h1 por documento html-->
     <h2>Encabezado de nivel 2</h2>
-    <h3>Encabezado de nivel 3</h3>
+    <h3 style="color: black;">Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
 
-    <h4>Etiqueta <u>&lt;p&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;p&gt;</u></h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi illo ipsa aut repudiandae asperiores hic consequuntur sapiente distinctio unde veritatis maiores pariatur quo sunt ratione perspiciatis 
         exercitationem, dicta aliquid.</p>
     
@@ -55,7 +67,7 @@
 
     <h3><u>Etiquetas de texto básicas</u></h3>
     <!--Etiquetas de texto básicas-->
-    <h4>Etiquetas <u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u> y <u>&lt;small&gt;</u></h4>
+    <h4>Etiquetas <span class="e"><u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u> y <u>&lt;small&gt;</u></span></h4>
     <p>
         Palabras en: <b>Negrita</b>, <i>Italica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, h<sub>2</sub>o
         , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>
@@ -66,14 +78,14 @@
     <h3><u>Etiquetas de texto Semanticas</u></h3>
     <!-- Semanticas (importantes a la hora de redactar textos)-->
     
-    <h4>Etiquetas <u>&lt;strong&gt;</u> y <u>&lt;em&gt;</u></h4>
+    <h4>Etiquetas <u class="e">&lt;strong&gt;</u> y <u class="e">&lt;em&gt;</u></h4>
     <p>
         <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
     </p>
 
     <!-- Para colocar una frase ó cita textual-->
     
-    <h4>Etiquetas <u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u> y <u>&lt;span&gt;</u></h4>
+    <h4>Etiquetas <span class="e"><u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u></span> y <u class="e">&lt;span&gt;</u></h4>
     <blockquote>Yo sólo sé, que nada se.</blockquote>
     <cite>Sócrates</cite> <br><br>
     <span>con "<strong>Span</strong>" podemos agregarle estilos a una pequeña parte de un texto
@@ -88,7 +100,7 @@
     <h3><u>Etiquetas de Saltos</u></h3>
     <!-- Etiquetas de Saltos -->
     
-        <h4>Etiquetas <u>&lt;br&gt;</u> y <u>&lt;hr&gt;</u></h4> 
+        <h4>Etiquetas <u class="e">&lt;br&gt;</u> y <u class="e">&lt;hr&gt;</u></h4> 
 
         <p>    <!-- "br" hace un salto de linea -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, 
@@ -107,7 +119,7 @@
 
     <h3><u>Etiquetas de Formateo</u></h3>
     <!--Etiquetas de Formateo-->
-    <h4>Etiqueta <u>&lt;pre&gt;</u> </h4>
+    <h4>Etiqueta <u class="e">&lt;pre&gt;</u> </h4>
 
         <pre> <!-- va hacer que el navegador respete el formato que estes empleando , con sus espacios y todo-->
         -HTML
@@ -119,14 +131,14 @@
         </pre>
     </p>
 
-    <h4>Etiqueta <u>&lt;code&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;code&gt;</u></h4>
     <p>  <!-- Formato de código (la tipografia)-->
         <code>
             Este texto esta en formato de código
         </code>
     </p>
 
-    <h4>Etiqueta <u>&lt;pre&gt;</u> + <u>&lt;code&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;pre&gt;</u> + <u class="e">&lt;code&gt;</u></h4>
     <p>    <!-- Combinando ambas etiquetas podriamos implementar ejemplos de código en nuestro sitio web -->
         <pre>
             <code>
@@ -147,41 +159,41 @@
         <!-- No hay una regla para usar una unica vez estas etiquetas, excepto por el "main".
             podemos combinarlas y jugar con las etiquetas, claro , siendo coherente. (esto en interfaces más
             complejas)-->
-    <h4>Etiqueta  <u>&lt;div&gt;</u></h4>
+    <h4>Etiqueta  <u class="e">&lt;div&gt;</u></h4>
 
     <div>Es una etiqueta contenedora que no tiene <strong>semantica</strong></div>
 
     <h4> <u>Etiquetas con Semantica (con significado)</u></h4>
 
-    <h4>Etiqueta <u>&lt;header&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;header&gt;</u></h4>
 
     <header>
         header - Cabecera de un sitio web o de una sección
         (generalmente se le coloca el nav aqui)
     </header>
 
-    <h4>Etiqueta <u>&lt;main&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;main&gt;</u></h4>
 
     <main>
         main - Define la sección principal del documento, sólo puede existir una
         etiqueta main por documento
     </main>
 
-    <h4>Etiqueta <u>&lt;footer&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;footer&gt;</u></h4>
 
     <footer>
         footer - Pie de página de un sitio web o de una sección
         
     </footer>
 
-    <h4>Etiqueta <u>&lt;nav&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;nav&gt;</u></h4>
 
     <nav>
         nav - Representa una navegación (un conjunto de enlaces que formen un menú de navegación)
         tambien puede ser una botonera. 
     </nav>
 
-    <h4>Etiqueta <u>&lt;article&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;article&gt;</u></h4>
 
     <article>
         article - representa una sección de autocontenido (que por si sola se 
@@ -191,20 +203,20 @@
             donde aparecen cards con información que te da el contexto.--> 
     </article>
 
-    <h4>Etiqueta <u>&lt;aside&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;aside&gt;</u></h4>
 
     <aside>
         aside - Representa contenido complementario o secundario (como un "articulos
         relacionados"). Tambien nos sirve para colocar zonas de publicidad
     </aside>
 
-    <h4>Etiqueta <u>&lt;section&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;section&gt;</u></h4>
 
     <section>
         section - Representa una sección de contenido genérico.
     </section>
     
-    <h4>Etiqueta <u>&lt;address&gt;</u></h4>
+    <h4>Etiqueta <u class="e">&lt;address&gt;</u></h4>
 
     <address>
         address - Representa una dirección fisica.
@@ -234,7 +246,9 @@
         <!-- Podemos agregarles estilos mediante el atributo style (no es lo correcto
             pero lo hacemos para el ejemplo)-->
 
-    <div style="background-color: yellow;">La etiqueta de bloque más representativa por excelencia es &lt;div&gt;,
+            <!--#1 ejemplo de estilos en HTML con el atributo "style"-->
+
+    <div style="background-color: yellow; color: red;">La etiqueta de bloque más representativa por excelencia es &lt;div&gt;,
         una etiqueta que genera saltos de linea con sus etiquetas hermanas. (osea
         abarca todo el espacio de la linea donde este)
         <!--abarcan todo el espacio y generan saltos de linea si hay otra etiqueta-->
@@ -244,6 +258,20 @@
         <!-- estas no generan saltos de linea de arriba ni de abajo-->
     </span>
     <span style="background-color: blueviolet;">Otra &lt;span&gt; de ejemplo</span>
+
+    <hr>
+
+    <h3>Estilos <u>CSS</u> en <u>HTML</u></h3>
+
+    <h4>#1 Con el atributo <u>style</u> dentro de una etiqueta</h4>
+    <h4>#2 Con la etiqueta <u>Style</u> en el head (buena practica)</h4>
+    <h4>#3 Utilizando un archivo CSS y enlazarlo a nuestro documento HTML mediante la etiqueta &lt;link&gt;
+        (Es la mejor y de buena practica, nos ayuda a mantener todo ordenado)
+    </h4>
+    <h5>Consejo : Utilizar una carpeta "assets" para colocar dentro subcarpetas con las hojas de estilos(CSS),
+        Scripts(JS), Imagenes(IMG), etc. (Todos los recursos de nuestro proyecto para que este bien ordenados y organizados)
+    </h5>
 </body>
+
 
 </html> 

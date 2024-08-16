@@ -1,0 +1,9 @@
+/* Estilo para las etiquetas */
+.e {
+    color: navy;
+}
+
+/* Tipografia para toda la página */
+body {
+    font-family: sans-serif;
+}
