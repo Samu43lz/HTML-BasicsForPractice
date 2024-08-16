@@ -142,7 +142,11 @@
 
     <h3><u>Etiquetas Semanticas Estructurales</u></h3>   
     <!-- Etiquetas Semanticas Estructurales-->
-
+        <!-- Antes de utilizar etiquetas "div" como contenedores debemos utilizar las etiquetas contenedoras
+            semanticas como buena practica y poder entender mejor lo que hacemos. -->
+        <!-- No hay una regla para usar una unica vez estas etiquetas, excepto por el "main".
+            podemos combinarlas y jugar con las etiquetas, claro , siendo coherente. (esto en interfaces más
+            complejas)-->
     <h4>Etiqueta  <u>&lt;div&gt;</u></h4>
 
     <div>Es una etiqueta contenedora que no tiene <strong>semantica</strong></div>
@@ -153,6 +157,7 @@
 
     <header>
         header - Cabecera de un sitio web o de una sección
+        (generalmente se le coloca el nav aqui)
     </header>
 
     <h4>Etiqueta <u>&lt;main&gt;</u></h4>
@@ -166,13 +171,14 @@
 
     <footer>
         footer - Pie de página de un sitio web o de una sección
+        
     </footer>
 
     <h4>Etiqueta <u>&lt;nav&gt;</u></h4>
 
     <nav>
         nav - Representa una navegación (un conjunto de enlaces que formen un menú de navegación)
-        tambien puede ser una botonera.
+        tambien puede ser una botonera. 
     </nav>
 
     <h4>Etiqueta <u>&lt;article&gt;</u></h4>
@@ -180,6 +186,9 @@
     <article>
         article - representa una sección de autocontenido (que por si sola se 
         explica).
+        <!-- este puede tener su propio footer, aparte del footer principal de la página.
+            cpodemos reconocer un article porque se explica solo, como en un sitio web de noticias
+            donde aparecen cards con información que te da el contexto.--> 
     </article>
 
     <h4>Etiqueta <u>&lt;aside&gt;</u></h4>
@@ -201,6 +210,40 @@
         address - Representa una dirección fisica.
     </address>
 
-    </body>
+    <!-- Ejemplos : 
+        el panel que aparece con las diferentes opciones de Youtube como biblioteca,
+        suscripciones, principal, etc, vendria siendo un "nav". En la interfaz de youtube
+        lo más importante es el video y la información del video en el que estamos
+        sus views, el canal que hizo el video, sus estadisticas y estarian
+        dentro de una etiqueta "main" y la zona de los videos sugeridos vendrian
+        siendo un "aside" y cada una de las miniaturas de los videos sugeridos podrian
+        ser un "article" porque se explican , se dan contexto por si mismo.
+        La sección donde estan los comentarios podrian ser una "section" y
+        cada comentario un article.-->
+
+    <!-- Consejo
+        Analizar las interfaces web que generalmente consumes, diviendo las
+        secciones y vayas diciendo "quizas esto puede ir en un nav, en un
+        article, etc." La semantica siempre va depender de las necesidades
+        del contenido que tienes"
+    -->
+
+    <hr>
+
+    <h3>Etiquetas de <u>Bloque</u> VS Etiquetas de <u>Linea</u></h3>
+        <!-- Podemos agregarles estilos mediante el atributo style (no es lo correcto
+            pero lo hacemos para el ejemplo)-->
+
+    <div style="background-color: yellow;">La etiqueta de bloque más representativa por excelencia es &lt;div&gt;,
+        una etiqueta que genera saltos de linea con sus etiquetas hermanas. (osea
+        abarca todo el espacio de la linea donde este)
+        <!--abarcan todo el espacio y generan saltos de linea si hay otra etiqueta-->
+    </div>
+    <span style="background-color: green;">La etiqueta de linea por excelencia es &lt;span&gt;, una etiqueta de Linea sólo ocupa espacio
+        según su contenido. (lo necesario)
+        <!-- estas no generan saltos de linea de arriba ni de abajo-->
+    </span>
+    <span style="background-color: blueviolet;">Otra &lt;span&gt; de ejemplo</span>
+</body>
 
 </html> 
