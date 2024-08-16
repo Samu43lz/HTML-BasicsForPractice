@@ -26,7 +26,8 @@
         tiene un margen y espaciado ademas de tener espacio de bloque
         por lo que el siguiente elemento despues de este hara un
         salto de linea. En cambio un texto sin etiqueta no tendra
-        la propiedad en bloque.-->
+        la propiedad en bloque.(el texto con etiqueta "p" respetara el espacio que le demos almenos de un solo 
+        espaciado)-->
     
         Ejemplo de texto sin etiqueta     
         no habra saltos de linea.  <!-- nuestros Textos deben ir siempre envueltos en una etiqueta -->
@@ -34,7 +35,10 @@
     <hr>
 
     <h3><u>Encabezados</u></h3>
-    <!-- Encabezados -->
+    <!-- Encabezados -->   
+    <h4>Etiquetas <u>&lt;h1&gt;</u> y sucesivamente hasta el <u>&lt;h6&gt;</u></h4>
+    <!-- Utilizo código difente para colocar los "picoparentesis" porque colocarlos asi nomas no me permitiria
+        añadirlos porque VS me los interpreta como etiquetas a utilizar--> 
 
     <h1>Encabezado de nivel 1</h1> <!-- Solo debe haber un h1-->
     <h2>Encabezado de nivel 2</h2>
@@ -42,12 +46,16 @@
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
+
+    <h4>Etiqueta <u>&lt;p&gt;</u></h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi illo ipsa aut repudiandae asperiores hic consequuntur sapiente distinctio unde veritatis maiores pariatur quo sunt ratione perspiciatis 
         exercitationem, dicta aliquid.</p>
     
     <hr>
 
     <h3><u>Etiquetas de texto básicas</u></h3>
+    <!--Etiquetas de texto básicas-->
+    <h4>Etiquetas <u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u> y <u>&lt;small&gt;</u></h4>
     <p>
         Palabras en: <b>Negrita</b>, <i>Italica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, h<sub>2</sub>o
         , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>
@@ -57,10 +65,15 @@
     
     <h3><u>Etiquetas de texto Semanticas</u></h3>
     <!-- Semanticas (importantes a la hora de redactar textos)-->
+    
+    <h4>Etiquetas <u>&lt;strong&gt;</u> y <u>&lt;em&gt;</u></h4>
     <p>
         <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
     </p>
+
     <!-- Para colocar una frase ó cita textual-->
+    
+    <h4>Etiquetas <u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u> y <u>&lt;span&gt;</u></h4>
     <blockquote>Yo sólo sé, que nada se.</blockquote>
     <cite>Sócrates</cite> <br><br>
     <span>con "<strong>Span</strong>" podemos agregarle estilos a una pequeña parte de un texto
@@ -71,9 +84,12 @@
     </span> 
 
     <hr>
-
+    
+    <h3><u>Etiquetas de Saltos</u></h3>
     <!-- Etiquetas de Saltos -->
-        
+    
+        <h4>Etiquetas <u>&lt;br&gt;</u> y <u>&lt;hr&gt;</u></h4> 
+
         <p>    <!-- "br" hace un salto de linea -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, 
             quis! Molestiae, corrupti <br> sunt vero magnam quia esse eum recusandae odit quae 
@@ -82,6 +98,47 @@
 
         <!-- "hr" sirve para dividr secciones de nuestra página-->
         <hr>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing el
+            it. Quidem, saepe fuga quibusdam doloremque ipsa, natus officiis, autem iure quis dolor alias modi consequatur nemo! Explicabo ad enim sapiente nostrum rerum?
+        </p>
+
+    <hr>
+
+    <h3><u>Etiquetas de Formateo</u></h3>
+    <!--Etiquetas de Formateo-->
+    <h4>Etiqueta <u>&lt;pre&gt;</u> </h4>
+
+        <pre> <!-- va hacer que el navegador respete el formato que estes empleando , con sus espacios y todo-->
+        -HTML
+            -Terminar de grabar las secciones de este curso.
+            -Editar en un sólo Video.
+        -CSS
+            -Comenzar a grabar secciones CSS.
+            -Editar en un sólo Video.
+        </pre>
+    </p>
+
+    <h4>Etiqueta <u>&lt;code&gt;</u></h4>
+    <p>  <!-- Formato de código (la tipografia)-->
+        <code>
+            Este texto esta en formato de código
+        </code>
+    </p>
+
+    <h4>Etiqueta <u>&lt;pre&gt;</u> + <u>&lt;code&gt;</u></h4>
+    <p>    <!-- Combinando ambas etiquetas podriamos implementar ejemplos de código en nuestro sitio web -->
+        <pre>
+            <code>
+                // Función para sumar dos números
+                function sumar(a, b) {
+                return a + b;
+                }
+            </code>
+        </pre>
+    </p>
+
+
 
     </body>
 
