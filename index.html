@@ -28,12 +28,38 @@
     </head>
 
 <body>
-    
-    <h2>Aprendiendo BIEN HTML</h2>
+    <!-- Todo el diseño y espaciado se hace con CSS. En HTML nos enfocamos de la estructura 
+        (osea define el contenido , más no como se ve.)-->
+    <h2 id="inicio">Aprendiendo BIEN HTML</h2>
 
     <hr>
 
-    <h3><u>Diferencias entre un texto con y sin etiqueta</u></h3>
+    <h3>Temario</h3>
+        <!-- con esto cada enlace nos llevara a un sección especifica de nuestra página-->
+        <ul>
+            <li><a href="#dif_texto">Diferencias entre un texto con y sin etiqueta</a></li>
+            <li><a href="#encabezados">Encabezados</a></li>
+            <li><a href="#e_basicas">Etiquetas de texto básicas</a></li>
+            <li><a href="#e_txt_semanticas">Etiquetas de texto Semanticas</a></li>
+            <li><a href="#e_saltos">Etiquetas de Saltos</a></li>
+            <li><a href="#e_formateo">Etiquetas de Formateo</a></li>
+            <li><a href="#e_semanticas_estructurales">Etiquetas Semanticas Estructurales</a></li>
+            <li><a href="#e_bloque_y_linea">Etiquetas de Bloque VS de Linea</a></li>
+            <li><a href="#estilos_css_html">Estilos CSS en HTML</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#svg">SVG</a></li>
+            <li><a href="#figuras">Figuras</a></li>
+            <li><a href="#l_ordenadas">Listas Ordenadas</a></li>
+            <li><a href="#l_desordenadas">Listas desordenadas</a></li>
+            <li><a href="#l_definicion">Lista de Definición</a></li>
+            <li><a href="#tablas_sencillas">Tabla Sencilla</a></li>
+            <li><a href="#tablas_elaboradas">Tabla más elaborada</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#scripts">Scripts </a></li>
+
+    <hr>
+
+    <h3 id="dif_texto"><u>Diferencias entre un texto con y sin etiqueta</u></h3>
     <!-- con "ctrl" + " } " hacemos un bloque comentado en HTML"-->
     <!-- esto es un comentario -->
     <p>Hola REPASANDO HTML!</p>
@@ -50,7 +76,7 @@
     
     <hr>
 
-    <h3><u>Encabezados</u></h3>
+    <h3 id="encabezados"><u>Encabezados</u></h3>
     <!-- Encabezados -->   
     <h4>Etiquetas <u class="e">&lt;h1&gt;</u> y sucesivamente hasta el <u class="e">&lt;h6&gt;</u></h4>
     <!-- Utilizo código difente para colocar los "picoparentesis" porque colocarlos asi nomas no me permitiria
@@ -62,31 +88,33 @@
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
-
+    <a href="#inicio">Inicio🔝</a>
+    
     <h4>Etiqueta <u class="e">&lt;p&gt;</u></h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi illo ipsa aut repudiandae asperiores hic consequuntur sapiente distinctio unde veritatis maiores pariatur quo sunt ratione perspiciatis 
         exercitationem, dicta aliquid.</p>
     
     <hr>
 
-    <h3><u>Etiquetas de texto básicas</u></h3>
+    <h3 id="e_basicas"><u>Etiquetas de texto básicas</u></h3>
     <!--Etiquetas de texto básicas-->
-    <h4>Etiquetas <span class="e"><u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u> y <u>&lt;small&gt;</u></span></h4>
+    <h4>Etiquetas <span class="e"><u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u>, 
+        <u>&lt;small&gt;</u> y <u>&lt;del&gt;</u></span></h4>
     <p>
         Palabras en: <b>Negrita</b>, <i>Italica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, h<sub>2</sub>o
-        , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>
+        , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>, <del>Texto borrado</del>
     </p>
-    
+    <a href="#inicio">Inicio🔝</a>
     <hr>
     
-    <h3><u>Etiquetas de texto Semanticas</u></h3>
+    <h3 id="e_txt_semanticas"><u>Etiquetas de texto Semanticas</u></h3>
     <!-- Semanticas (importantes a la hora de redactar textos)-->
     
     <h4>Etiquetas <u class="e">&lt;strong&gt;</u> y <u class="e">&lt;em&gt;</u></h4>
     <p>
         <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
     </p>
-
+    
     <!-- Para colocar una frase ó cita textual-->
     
     <h4>Etiquetas <span class="e"><u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u></span> y <u class="e">&lt;span&gt;</u></h4>
@@ -97,11 +125,12 @@
             agregando una clase. (span sirve para manipular partes de código
             a conveniencia con css y no nos da ningun estilo como en otras
             etiquetas).
-    </span> 
-
+    </span> <br>
+    <a href="#inicio">Inicio🔝</a>
+    
     <hr>
     
-    <h3><u>Etiquetas de Saltos</u></h3>
+    <h3 id="e_saltos"><u>Etiquetas de Saltos</u></h3> 
     <!-- Etiquetas de Saltos -->
     
         <h4>Etiquetas <u class="e">&lt;br&gt;</u> y <u class="e">&lt;hr&gt;</u></h4> 
@@ -121,7 +150,7 @@
 
     <hr>
 
-    <h3><u>Etiquetas de Formateo</u></h3>
+    <h3 id="e_formateo"><u>Etiquetas de Formateo</u></h3> 
     <!--Etiquetas de Formateo-->
     <h4>Etiqueta <u class="e">&lt;pre&gt;</u> </h4>
 
@@ -153,10 +182,11 @@
             </code>
         </pre>
     </p>
+    <a href="#inicio">Inicio🔝</a>
 
     <hr>
 
-    <h3><u>Etiquetas Semanticas Estructurales</u></h3>   
+    <h3 id="e_semanticas_estructurales"><u>Etiquetas Semanticas Estructurales</u></h3>  
     <!-- Etiquetas Semanticas Estructurales-->
         <!-- Antes de utilizar etiquetas "div" como contenedores debemos utilizar las etiquetas contenedoras
             semanticas como buena practica y poder entender mejor lo que hacemos. -->
@@ -225,6 +255,7 @@
     <address>
         address - Representa una dirección fisica.
     </address>
+    <a href="#inicio">Inicio🔝</a>
 
     <!-- Ejemplos : 
         el panel que aparece con las diferentes opciones de Youtube como biblioteca,
@@ -246,7 +277,7 @@
 
     <hr>
 
-    <h3>Etiquetas de <u>Bloque</u> VS Etiquetas de <u>Linea</u></h3>
+    <h3 id="e_bloque_y_linea">Etiquetas de <u>Bloque</u> VS Etiquetas de <u>Linea</u></h3>
         <!-- Podemos agregarles estilos mediante el atributo style (no es lo correcto
             pero lo hacemos para el ejemplo)-->
 
@@ -265,7 +296,7 @@
 
     <hr>
 
-    <h3>Estilos <u>CSS</u> en <u>HTML</u></h3>
+    <h3 id="estilos_css_html">Estilos <u>CSS</u> en <u>HTML</u></h3> 
 
     <h4>#1 Con el atributo <u>style</u> dentro de una etiqueta</h4>
     <h4>#2 Con la etiqueta <u>Style</u> en el head (buena practica)</h4>
@@ -275,10 +306,11 @@
     <h5>Consejo : Utilizar una carpeta "assets" para colocar dentro subcarpetas con las hojas de estilos(CSS),
         Scripts(JS), Imagenes(IMG), etc. (Todos los recursos de nuestro proyecto para que este bien ordenados y organizados)
     </h5>
+    <a href="#inicio">Inicio🔝</a>
 
     <hr>
 
-    <h3><u>Imágenes</u></h3>
+    <h3 id="imagenes"><u>Imágenes</u></h3>  
 
     <img src="assets/images/periodic_table_html.jpg" alt="Tabla Periodica HTML">
     <img src="assets/images/duck.gif" alt="pato caminando">
@@ -287,14 +319,14 @@
     
     <hr>
     
-    <h3><u>SVG</u></h3>
+    <h3 id="svg"><u>SVG</u></h3>  
     
     <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Escudo Nacional del Perú SVG">
     <img src="assets/images/Greater_coat_of_arms_of_the_United_States.svg.webp" alt="USA">
 
     <hr>
 
-    <h3><u>Figuras</u></h3>
+    <h3 id="figuras"><u>Figuras</u></h3>
 
     <figure>
         <!-- Es un contenedor semantico utilizado para agrupar contenido relacionado como
@@ -302,10 +334,11 @@
         <img src="assets/images/periodic_table_html.jpg" alt="Tabla de los elementos HTML">
         <figcaption>Tabla de los elementos HTML</figcaption>
     </figure>
+    <a href="#inicio">Inicio🔝</a>
     
     <hr>
 
-    <h3><u>Listas Ordenadas</u></h3>
+    <h3 id="l_ordenadas"><u>Listas Ordenadas</u></h3>  
     <h4>Utiliza <span class="e">&lt;ol&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
     <h4>Las estaciones del año</h4>
 
@@ -333,7 +366,7 @@
 
     <hr>
 
-    <h3><u>Listas desordenadas</u></h3>
+    <h3 id="l_desordenadas"><u>Listas desordenadas</u></h3>
     <h4>Utiliza <span class="e">&lt;ul&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
     <h4>Cosas por hacer</h4>
     
@@ -368,7 +401,7 @@
 
     <hr>
 
-    <h3>Listas de Definición</h3>
+    <h3 id="l_definicion">Listas de Definición</h3>
     <h4>Utiliza <span class="e">&lt;dl&gt;</span>, <span class="e">&lt;dt&gt;</span> y <span class="e">&lt;dd&gt;</span></h4>
     <dl>
         <dt>HTML</dt>
@@ -378,10 +411,11 @@
         <dt>Javascript</dt>
         <dd>Es el lenguaje de la WEB, utilizada para dar interactividad.</dd>
     </dl>
+    <a href="#inicio">Inicio🔝</a>
 
     <hr>
 
-    <h3>Tablas</h3>
+    <h3 id="tablas_sencillas">Tablas Sencillas</h3>
     <h4>Utilizamos las etiquetas <span class="e">&lt;table&gt;</span>, <span class="e">&lt;tr&gt;</span>(table row) y 
     <span class="e">&lt;td&gt;</span>(table data)</h4>
     
@@ -410,7 +444,8 @@
 
     <hr>
 
-    <h3><u>Tabla más elaborada</u></h3>
+    <h3 id="tablas_elaboradas"><u>Tabla más elaborada</u></h3>
+
     <!-- Estas tienen 3 agrupadores de fila  <thead> (como el head), <tbody>(para el contenido, osea los datos)
         y <tfoot> para el pie de tabla-->
     <table>
@@ -456,11 +491,29 @@
             </tr>
         </tfoot>
     </table>
+    <a href="#inicio">Inicio🔝</a>
+    
+    <hr>
+
+    <h3 id="enlaces"><u>Enlaces</u></h3>
+    <h4>Etiqueta <u class="e">&lt;a&gt;</u></h4>
+    <!-- Con esta etiqueta podemos enlazar nuestro archivo HTML con otro archivo HTML-->
+    
+    <a href="EnlaceEjemplo.html">Página de ejemplo para enlaces</a> <br>
+    <a href="https://www.linkedin.com/in/juan-samuel-salazar-alarc%C3%B3n-41798929a/" target="_blank" rel="nofollow">Mi perfil Linkedin</a> <br>
+    <a href="https://github.com/Samu43lz" target="_blank" rel="nofollow">Visita mi repositorio de Github</a> <br>
+    <!-- Para enlaces externos se recomienda usar el atributo target y rel -->
+    <!-- Tambien podemos utilizar vectores/SVG/Imagenes normales/Gifs, etc.-->
+    <h4>Colocando la etiqueta <u class="e">&lt;img&gt;</u> dentro de la etiqueta <u class="e">&lt;a&gt;</u></h4>
+    <a href="EnlaceEjemplo.html">
+        <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Link con SVG">
+    </a> <br>
+    <a href="#inicio">Inicio🔝</a>
     <hr>
 
 
 
-    <h3><u>Scripts </u> en <u>HTML</u></h3>
+    <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
     <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
     
     <h4>#1 Mediante la etiqueta &lt;script&gt; al final antes del cierre de &lt;body&gt; (Buena practica)</h4>
@@ -469,6 +522,7 @@
     </script>
 
     <h4>#2 Mediante un archivo aparte JS (Buena practica y más organizado)</h4>
+    <a href="#inicio">Inicio🔝</a>
 
 </body>
 
