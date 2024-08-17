@@ -381,6 +381,83 @@
 
     <hr>
 
+    <h3>Tablas</h3>
+    <h4>Utilizamos las etiquetas <span class="e">&lt;table&gt;</span>, <span class="e">&lt;tr&gt;</span>(table row) y 
+    <span class="e">&lt;td&gt;</span>(table data)</h4>
+    
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Constelación</td>
+            <td>Tipo</td>
+        </tr>
+        <tr>
+            <td>Ikki</td>
+            <td>Fenix</td>
+            <td>Bronce</td>
+        </tr>
+        <tr>
+            <td>Shaina</td>
+            <td>Ofiuco</td>
+            <td>Plata</td>
+        </tr>
+        <tr>
+            <td>Saga</td>
+            <td>Géminis</td>
+            <td>Dorado</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3><u>Tabla más elaborada</u></h3>
+    <!-- Estas tienen 3 agrupadores de fila  <thead> (como el head), <tbody>(para el contenido, osea los datos)
+        y <tfoot> para el pie de tabla-->
+    <table>
+        <thead>       <!-- todas van dentro de etiquetas <tr> -->
+            <tr>      <!-- el thead y tfoot cambian el <td> por <th>(significa table head)-->
+                <th colspan="3">Tabla de los Santos de Athena</th>
+            </tr>                          <!-- con colspan podemos combinar celdas colocando entre las comillas-->
+            <tr>                           <!-- el número de columnas quieres que ocupe dicha fila-->
+                <th>Nombre</th>
+                <th>Constelación</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ikki</td>
+                <td>Fenix</td>
+                <td>Bronce</td>
+            </tr>
+            <tr>
+                <td>Mistry</td>
+                <td>Lagarto</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Saga</td>
+                <td>Géminis</td>
+                <td>Dorado</td>
+            </tr>
+            <tr>
+                <td>Shaina</td>
+                <td rowspan="2">Ofiuco</td>  <!-- con rowspan podemos combinar celdas colocando entre las comillas el-->
+                <td>Plata</td>                <!-- número de filas que desees que ocupe dicha fila-->
+            </tr>
+            <tr>
+                <td>Odiseo</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
 
 
     <h3><u>Scripts </u> en <u>HTML</u></h3>
