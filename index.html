@@ -21,7 +21,11 @@
         <!-- #3 Ejemplo de Estilos CSS en HTML, con LINK (la mejor practicca)-->
     
         <link rel="stylesheet" href="assets/css/styles.css">  <!--Enlazamos nuestro archivo CSS con nuestro HTML-->
-</head>
+
+        <!-- #2 Ejemplo para agregar código Javascript-->
+
+        <script src="assets/js/codes.js"></script>
+    </head>
 
 <body>
     
@@ -271,6 +275,124 @@
     <h5>Consejo : Utilizar una carpeta "assets" para colocar dentro subcarpetas con las hojas de estilos(CSS),
         Scripts(JS), Imagenes(IMG), etc. (Todos los recursos de nuestro proyecto para que este bien ordenados y organizados)
     </h5>
+
+    <hr>
+
+    <h3><u>Imágenes</u></h3>
+
+    <img src="assets/images/periodic_table_html.jpg" alt="Tabla Periodica HTML">
+    <img src="assets/images/duck.gif" alt="pato caminando">
+    <img src="assets/images/ES-SemanticGeneral-Search.png" alt="Estructura Semantica HTML">
+    <img src="assets/images/EstructuraHTML.jpg" alt="HTML estructura">
+    
+    <hr>
+    
+    <h3><u>SVG</u></h3>
+    
+    <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Escudo Nacional del Perú SVG">
+    <img src="assets/images/Greater_coat_of_arms_of_the_United_States.svg.webp" alt="USA">
+
+    <hr>
+
+    <h3><u>Figuras</u></h3>
+
+    <figure>
+        <!-- Es un contenedor semantico utilizado para agrupar contenido relacionado como
+            imágenes, graficos, ilustraciones y su correspondiente leyenda o pie de página -->
+        <img src="assets/images/periodic_table_html.jpg" alt="Tabla de los elementos HTML">
+        <figcaption>Tabla de los elementos HTML</figcaption>
+    </figure>
+    
+    <hr>
+
+    <h3><u>Listas Ordenadas</u></h3>
+    <h4>Utiliza <span class="e">&lt;ol&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
+    <h4>Las estaciones del año</h4>
+
+    <!-- La lista se comienza por una etiqueta ol y sus items con li-->
+    <ol>   
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Inviero</li>
+    </ol>
+    <!-- Podemos cambiar el order de la lista con la etiqueta-->
+    <ol start="3">
+        <li>Primavera</li>
+        <li >Verano</li>
+        <li>Otoño</li>
+        <li>Inviero</li>
+    </ol>
+
+    <ol type="I"> <!--Podemos escoger el tipo de enúmeración-->  
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Inviero</li>
+    </ol>
+
+    <hr>
+
+    <h3><u>Listas desordenadas</u></h3>
+    <h4>Utiliza <span class="e">&lt;ul&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
+    <h4>Cosas por hacer</h4>
+    
+    <h5>con circulos (predeterminado)</h5>
+    <ul> <!-- figura circular predeterminada-->
+        <li>Estudiar SQL</li>
+        <li>Estudiar HTML</li>
+        <li>Estudiar CSS</li>
+        <li>Javascript</li>
+        <li>Java</li>
+    </ul>
+
+    <h5>Con cuadrados</h5>
+
+    <ul type="square"> <!-- con cuadrados--> 
+        <li>Estudiar SQL</li>
+        <li>Estudiar HTML</li>
+        <li>Estudiar CSS</li>
+        <li>Javascript</li>
+        <li>Java</li>
+    </ul>
+
+    <h5>Con circulos blancos en el medio</h5>
+
+    <ul type="circle"> <!-- con cuadrados--> 
+        <li>Estudiar SQL</li>
+        <li>Estudiar HTML</li>
+        <li>Estudiar CSS</li>
+        <li>Javascript</li>
+        <li>Java</li>
+    </ul>
+
+    <hr>
+
+    <h3>Listas de Definición</h3>
+    <h4>Utiliza <span class="e">&lt;dl&gt;</span>, <span class="e">&lt;dt&gt;</span> y <span class="e">&lt;dd&gt;</span></h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es un lenguaje de marcado que define la estructura de nuestras páginas web.</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definición de estilos para nuestros códigos HTML.</dd>
+        <dt>Javascript</dt>
+        <dd>Es el lenguaje de la WEB, utilizada para dar interactividad.</dd>
+    </dl>
+
+    <hr>
+
+
+
+    <h3><u>Scripts </u> en <u>HTML</u></h3>
+    <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
+    
+    <h4>#1 Mediante la etiqueta &lt;script&gt; al final antes del cierre de &lt;body&gt; (Buena practica)</h4>
+    <script>
+        console.log("Hola estamos aprendiendo HTML");
+    </script>
+
+    <h4>#2 Mediante un archivo aparte JS (Buena practica y más organizado)</h4>
+
 </body>
 
 
