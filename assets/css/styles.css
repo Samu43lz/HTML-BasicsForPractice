@@ -24,3 +24,15 @@ img {
     color: black;
     font-size: 20px;
 }
+
+.music-video {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:indigo
+}
+
+/* para ajustar el el tamaño de nuestro video debemos tratar de colocar una imagen del mismo tamaño del reproductor*/
+#video {  
+    max-width: 100%;
+    height: auto;
+}

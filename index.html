@@ -56,6 +56,9 @@
             <li><a href="#tablas_elaboradas">Tabla más elaborada</a></li>
             <li><a href="#enlaces">Enlaces</a></li>
             <li><a href="#scripts">Scripts </a></li>
+            <li><a href="#elementos-interactivos">Elemento Interactivos</a></li>
+            <li><a href="#audio-video">Audio y Video</a></li>
+            <li><a href="#iframes"></a>Iframes</li>
         </ul>
         <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd--> 
     <hr>
@@ -520,11 +523,55 @@
     <a href="#inicio">Inicio🔝</a>
     <hr>
 
+    <h3 id="elementos-interactivos">Elementos Interactivos</h3>
 
+    <button onclick="alert('hola haz clickeado el botón')">Este es un botón</button> <br>
+    <!--Colocar un elemento interactivo dentro de de etiquetas es de mala practica, pero sirve de ejemplo-->
+    
+    <details>
+        <summary>Titulo del Acordeón</summary>
+        <article>
+            <h3>Contenido del Acordeón</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus quaerat quae dolore id ea at ad harum assumenda laudantium, sapiente quibusdam voluptatibus earum, mollitia quasi illo minima rem reiciendis!</p>
+            <img src="assets/images/duck.gif" alt="Pato caminando">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores architecto, culpa dolorum ipsum perspiciatis ad temporibus nulla qui! Dolores velit distinctio magnam cupiditate quidem voluptatem doloribus recusandae veritatis a quaerat!</p>
+        </article>
+    </details>
+    
+    <!-- Una ventana modal en HTML-->
 
+    <dialog open>
+        Esto es una ventana modal en HTML
+    </dialog>    
+    <a href="#inicio">Inicio🔝</a>
+
+    <hr>
+
+    <h3 id="audio-video"><u>Audio y Video</u></h3>
+    <!--Audio-->
+    <!-- Para que pueda ser visible necesitamos agregarle el atributo controls!-->
+    <h4 class="music-video">The Outfield - Your Love (Music)</h4>
+
+    <!-- el atributo "autoplay" reproduce sin necesidad de controles -->
+    <!-- el atributo "loop" hara que se reproduzca el contenido nuevamente de manera automatica-->
+    <!-- el atributo "preload" hara que se descargue de manera automatica el archivo ni bien alguien entre
+        a nuestra página, esto hara que al momento de reproducir el audio, este ya este listo para escucharse.-->
+    <audio src="media/The_Outfield_-_Your_Love_Official_HD_Video_(youconvert.net).mp3" controls preload></audio>
+    
+    <h4 class="music-video">Peanuts Gang Singing "AC/DC - Back in Black" (Video)</h4>
+
+    <!-- a nuestro video le podemos colocar una miniatura colocando la propiedad "poster"-->
+    <video id="video" src="media/Peanuts Gang Singing _Back In Black_ by_ AC_DC.mp4" controls preload poster="assets/images/acdc.png"></video>
+    <br>
+    <a href="#inicio">Inicio🔝</a>
+    
+    <hr>
+
+    <h3 id="iframes"><u>Iframes</u></h3>
+    
     <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
     <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
-    
+    <!-- Con esto podemos hacer un acordeón interactivo sin ayuda de javascrip !-->  
     <h4>#1 Mediante la etiqueta &lt;script&gt; al final antes del cierre de &lt;body&gt; (Buena practica)</h4>
     <script>
         console.log("Hola estamos aprendiendo HTML");
