@@ -679,7 +679,7 @@
 
     <h3 id="formulario">Creación de Formulario</h3>
     <h4>Formulario de login</h4>
-    <form action="" method="get"> 
+    <form action="" method="get" autocomplete="on"> <!-- autocomplete lo podemos utilizar en el form en general o en secciones especcificas-->
         <!-- el "Method" predeterminado es "GET" en donde los valores se enviaran por URL-->
         <!-- el atributo action nos dice a donde enviar toda la información -->
         <!-- el atributo name sirve para darle un nombre a ese recuadro , de que es?. cuando se envien
@@ -698,6 +698,9 @@
         <!-- el atributo "title" agrega un mensaje al recuadro del requerimiento-->
     <!-- el atributo "required" no dejara enviar nada hasta que se rellene dicho campo y se cumpla con las restricciones.-->
         <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Correo Eléctronico" required>
+        <br>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="Introduce tu Contraseña" required>
         <br>
@@ -705,6 +708,50 @@
         <br>
         <input type="reset">
     </form>
+    <h4>Selects, Radios, y Checkbox</h4>
+    <form>
+        <p>Elige tu idioma</p>
+        <select name="idioma" required> <!-- tambien podemos agregar el atributo "Multiple"-->
+            <option value="">Elige una opción</option>
+            <option value="es">Español</option> <!-- podemos utilizar el atributo "selected" para que dicha opción este seleccionada predeterminadamente-->
+            <option value="en">Inglés</option>   
+            <option value="fr">Francés</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugues</option>
+        </select>
+        <p>Lenguaje de Programación favorito</p> 
+        <input type="radio" name="lenguaje" id="radio-js" value="js"> <!-- podemos utilizar el atributo "checked" para marcas una de las opciones de menra predeterminada -->
+        <label for="radio-js">Javascript</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php" required>
+        <label for="radio-php">PHP</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py">
+        <label for="radio-py">Python</label>
+        <p>Elige tus intereses</p>
+        <label>
+            <input type="checkbox" name="intereses" value="deportes">Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="finanzas">Finanzas
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="tecnologia">Tecnologia
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="politica">Politica
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="ecologia">Ecologia
+        </label>
+        <label>
+            <input type="checkbox" name="terminos" required>
+            ¿Aceptas los terminos y condiciones?
+        </label>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <!-- resultado : file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?idioma=it#formulario-->
+        <!-- como vemos se nos enviaran los datos con una URL, mostrandonos el "value" de esa opción escogida-->
     <a href="#inicio">Inicio🔝</a>
 
     <hr>
