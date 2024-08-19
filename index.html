@@ -60,6 +60,7 @@
             <li><a href="#audio-video">Audio y Video</a></li>
             <li><a href="#iframes">Iframes</a></li>
             <li><a href="#formularios">Elementos de Formulario</a></li>
+            <li><a href="#formulario">Creación de Formulario</a></li>
         </ul>
         <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd--> 
     <hr>
@@ -595,7 +596,7 @@
     <!-- Aunque pareciera que los recuadros son iguales, no lo son, y cambian mucho a la hora de interactuar
         y esto es más notorio en dispositivos táctiles.--> 
     
-    <h3>Colocamos &lt;input type="(atributo)"&gt;</h3>
+    <h3>Colocamos &lt;input type="(valor)"&gt;</h3>
     
     <h4>Texto (text)</h4>
     <input type="text">
@@ -624,7 +625,7 @@
     <h4>Subir un archivo (file)</h4>
     <input type="file"> <!-- para subir un archivo -->
     <br>
-    <h4>Subir varios archivos (file) + atributo "multiple"</h4>
+    <h4>Subir varios archivos (file) + atributo <span class="a">"multiple"</span> </h4>
     <input type="file" multiple> <!-- el atributo "multiple" hara que podamos subir más de un archivo -->
     <br>
     <h4>Input escondido (hidden)</h4>
@@ -655,7 +656,7 @@
         <option value="">JS</option>
     </select>
     <br>
-    <h4>Selector de opciones <i>multiple</i> agregando el atributo "multiple"</h4>
+    <h4>Selector de opciones <i>multiple</i> agregando el atributo <span class="a">"multiple"</span> </h4>
     <select name="" id="" multiple> <!-- con el atributo multiple podremos escoger más de una opción-->
         <option value="">HTML</option>
         <option value="">CSS</option>
@@ -665,6 +666,45 @@
         <option value="">PYTHON</option>
     </select>
     <br>
+    <h4>Texto solo lectura y desabilitado para datos ya predefinidos con la ayuda de los atributos <span class="a">"readonly"</span> 
+        y <span class="a">"disabled"</span> <br> aunque con <span class="a">"disabled"</span> ya basta para tener este efecto.
+    </h4>
+    <input type="text" value="Samuel Salazar" disabled>
+    <br>
+    <h4>Propiedad <span class="a">"placeholder"</span>  para indicar al usuario qué debe introducir en el recuadro.</h4>
+    <input type="text" placeholder="Escribe tu nombre">
+    <a href="#inicio">Inicio🔝</a>
+
+    <hr>
+
+    <h3 id="formulario">Creación de Formulario</h3>
+    <h4>Formulario de login</h4>
+    <form action="" method="get"> 
+        <!-- el "Method" predeterminado es "GET" en donde los valores se enviaran por URL-->
+        <!-- el atributo action nos dice a donde enviar toda la información -->
+        <!-- el atributo name sirve para darle un nombre a ese recuadro , de que es?. cuando se envien
+            los datos a página web estos seran enviados en forma de variables(el valor que le pusiste a "name")
+            más el valor que se colocó. Ademas podemos identificar que hay más variables en una URL porque
+            estan separadas de un " & " (amspersand) que nos dice que hay otra variable con datos-->
+
+            <!-- Ejemplo : https://samigod.com/?usuario=programar32&password=8281928--> <!-- asi se varan los datos enviados-->
+        
+        <label for="usuario">Usuario:</label> <!-- la etiqueta label coloca un texto al costado del formulario 
+        comentando de que es. el atributo "for" vincula ese texto con el formulario traves de un ID-->
+        <input type="text" name="usuario" id="usuario" placeholder="Intruduce tu Usuario" pattern="^[A-Za-z]+$" 
+        title="El campo solo admite letras" required>        
+        <!--cirunflejo : alt gr + (su boton)-->  <!-- "patter" es donde colocamos una "expresión regular"
+            que es una restricción, en este caso en aquel campo solo se permitiran letras Mayusculas o Minusculas-->
+        <!-- el atributo "title" agrega un mensaje al recuadro del requerimiento-->
+    <!-- el atributo "required" no dejara enviar nada hasta que se rellene dicho campo y se cumpla con las restricciones.-->
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Introduce tu Contraseña" required>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
     <a href="#inicio">Inicio🔝</a>
 
     <hr>
@@ -672,7 +712,7 @@
     <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
     <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
     <!-- Con esto podemos hacer un acordeón interactivo sin ayuda de javascrip !-->  
-    <h4>#1 Mediante la etiqueta &lt;script&gt; al final antes del cierre de &lt;body&gt; (Buena practica)</h4>
+    <h4>#1 Mediante la etiqueta <span class="e">&lt;script&gt;</span>  al final antes del cierre de <span class="e">&lt;body&gt;</span>  (Buena practica)</h4>
     <script>
         console.log("Hola estamos aprendiendo HTML");
     </script>

@@ -41,3 +41,9 @@ iframe {
     width: 80%; /* 80% de la pantalla (viewport) lo que lo hara responsivo */
     height: 400px;  /* 400 px de altura definidos */
 }
+
+/* diseño para los atributos */
+.a {
+    color:brown
+}
+
