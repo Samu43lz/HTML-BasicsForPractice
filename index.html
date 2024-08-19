@@ -59,6 +59,7 @@
             <li><a href="#elementos-interactivos">Elemento Interactivos</a></li>
             <li><a href="#audio-video">Audio y Video</a></li>
             <li><a href="#iframes">Iframes</a></li>
+            <li><a href="#formularios">Elementos de Formulario</a></li>
         </ul>
         <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd--> 
     <hr>
@@ -586,6 +587,86 @@
     
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4148478413877!2d-76.97727992581761!3d-12.083727088155957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c735783e43c5%3A0x2c62bd503a64b4d0!2sSchool%20of%20Rock!5e0!3m2!1sen!2spe!4v1724043822391!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <iframe width="300" height="300" src="https://www.youtube.com/embed/iKi5tH1Uj5M?si=7_ahnvkjXFv3Y_QH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <hr>
+
+    <h3 id="formularios">Elementos de Formulario</h3>
+    <!-- No vamos a ver el envio, para el envio y validaciones se necesita Javascript y CSS para el diseño-->
+    <!-- Aunque pareciera que los recuadros son iguales, no lo son, y cambian mucho a la hora de interactuar
+        y esto es más notorio en dispositivos táctiles.--> 
+    
+    <h3>Colocamos &lt;input type="(atributo)"&gt;</h3>
+    
+    <h4>Texto (text)</h4>
+    <input type="text">
+    <br>
+    <h4>checkbox (checkbox)</h4>
+    <input type="checkbox">
+    <br>
+    <h4>Para escoger una unica opcion entre muchas (radio)</h4>
+    <input type="radio">
+    <br>
+    <h4>Fecha (date)</h4>
+    <input type="date">
+    <br>
+    <h4>Paleta de colores (color)</h4>
+    <input type="color">
+    <br>
+    <h4>Botón (button)</h4>
+    <input type="button" value="Botón">
+    <br>
+    <h4>Botón de envío (submit)</h4>
+    <input type="submit"> <!-- enviar los datos-->
+    <br>
+    <h4>Resetear el contenido colocado (reset)</h4>
+    <input type="reset"> <!-- elimina/resetea todos los datos que hayamos colocado en el formulario-->
+    <br>
+    <h4>Subir un archivo (file)</h4>
+    <input type="file"> <!-- para subir un archivo -->
+    <br>
+    <h4>Subir varios archivos (file) + atributo "multiple"</h4>
+    <input type="file" multiple> <!-- el atributo "multiple" hara que podamos subir más de un archivo -->
+    <br>
+    <h4>Input escondido (hidden)</h4>
+    <input type="hidden" name="idioma" value="es">
+    <br>
+    <h4>Correo Eléctronico (email)</h4>
+    <input type="email">
+    <br>
+    <h4>Númerico (number)</h4>
+    <input type="number"> <!-- solo nos dejara ingresar números -->
+    <br>
+    <h4>Teléfono (tel)</h4>
+    <input type="tel">
+    <br>
+    <h4>Contraseña (password)</h4>
+    <input type="password">
+    <br>
+    <h4>Buscador (search)</h4>
+    <input type="search"> <!-- buscador -->
+    <br>
+    <h4>Zona de comentario con la etiqueta <u class="e">&lt;textarea&gt;</u></h4>
+    <textarea cols="50" rows="5"></textarea> <!-- para los comentarios-->  
+    <br>
+    <h4>Selector de opciones con etiqueta <u class="e">&lt;select&gt;</u> y dentro la etiqueta <u class="e">&lt;option&gt;</u> (una unica opción)</h4>
+    <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+    </select>
+    <br>
+    <h4>Selector de opciones <i>multiple</i> agregando el atributo "multiple"</h4>
+    <select name="" id="" multiple> <!-- con el atributo multiple podremos escoger más de una opción-->
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+        <option value="">PHP</option>
+        <option value="">SWIFT</option>
+        <option value="">PYTHON</option>
+    </select>
+    <br>
+    <a href="#inicio">Inicio🔝</a>
+
     <hr>
 
     <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
