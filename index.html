@@ -2,840 +2,890 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendiendo HTML <!-- entre 55 y 65 carácteres--></title>
-    <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
-    <!-- no más de 165 carácteres -->
-    <!-- cada documento de cada sección de nuestro sitio web deben tener diferentes meta
-        descripciones y titulos-->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aprendiendo HTML <!-- entre 55 y 65 carácteres--></title>
+   <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
+   <!-- no más de 165 carácteres -->
+   <!-- cada documento de cada sección de nuestro sitio web deben tener diferentes meta
+         descripciones y titulos-->
 
-    <link rel="canonical" href="http://tudominio.com/la-url-canonica">
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/favicon.png"> <!-- favicon para dispositivos moviles-->
-    <meta name="theme-color" content="#FF6600"> <!-- el color en "content" debe estar escrito en hexadecimal
-    esto le dara un toque personalizado a la barra con de color que escojamos. (esto solo sera
-    visible en dispositivos moviles)-->
-    <!-- Metaetiquetas para redes sociales (Para mostrar una card al momento de colocar la URL de nuestra página)-->
-    <meta property="og:title" content="Aprendiendo HTML">
-    <meta property="og:description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
-    <meta property="og:image" content="https://tudominio.com/assets/images/periodic_table_html.jpg">
-    <meta property="og:url" content="https://tudominio.com/index.html"> <!--el URL principal de nuestra página-->
-    <meta name="twittercard" content="summary">
-    <!-- tambien podriamos agregar nuestra cuenta de twitter a la card-->
-    <meta name="twitter:side" content="@Samuel">
-    <!-- #2 Ejemplo de estilos CSS en HTML, con la etiqueta Style-->
-    
-    <style>
-        h3 {
-            color:crimson
-        }
-    </style>
+   <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+   <link rel="icon" href="assets/images/favicon.png">
+   <link rel="apple-touch-icon" href="assets/images/favicon.png"> <!-- favicon para dispositivos moviles-->
+   <meta name="theme-color" content="#FF6600"> <!-- el color en "content" debe estar escrito en hexadecimal
+      esto le dara un toque personalizado a la barra con de color que escojamos. (esto solo sera
+      visible en dispositivos moviles)-->
+   <!-- Metaetiquetas para redes sociales (Para mostrar una card al momento de colocar la URL de nuestra página)-->
+   <meta property="og:title" content="Aprendiendo HTML">
+   <meta property="og:description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
+   <meta property="og:image" content="https://tudominio.com/assets/images/periodic_table_html.jpg">
+   <meta property="og:url" content="https://tudominio.com/index.html"> <!--el URL principal de nuestra página-->
+   <meta name="twittercard" content="summary">
+   <!-- tambien podriamos agregar nuestra cuenta de twitter a la card-->
+   <meta name="twitter:side" content="@Samuel">
+   <!-- #2 Ejemplo de estilos CSS en HTML, con la etiqueta Style-->
 
-        <!-- #3 Ejemplo de Estilos CSS en HTML, con LINK (la mejor practicca)-->
-    
-        <link rel="stylesheet" href="assets/css/styles.css">  <!--Enlazamos nuestro archivo CSS con nuestro HTML-->
+   <style>
+      h3 {
+         color: crimson
+      }
+   </style>
 
-        <!-- #2 Ejemplo para agregar código Javascript-->
+   <!-- #3 Ejemplo de Estilos CSS en HTML, con LINK (la mejor practicca)-->
 
-        <script src="assets/js/codes.js"></script>
-    </head>
+   <link rel="stylesheet" href="assets/css/styles.css"> <!--Enlazamos nuestro archivo CSS con nuestro HTML-->
+
+   <!-- #2 Ejemplo para agregar código Javascript-->
+
+   <script src="assets/js/codes.js"></script>
+</head>
 
 <body>
-    <!-- Todo el diseño y espaciado se hace con CSS. En HTML nos enfocamos de la estructura 
-        (osea define el contenido , más no como se ve.)-->
-    <h2 id="inicio">Aprendiendo BIEN HTML</h2>
+   <!-- Todo el diseño y espaciado se hace con CSS. En HTML nos enfocamos de la estructura 
+         (osea define el contenido , más no como se ve.)-->
+   <h2 id="inicio">Aprendiendo BIEN HTML</h2>
 
-    <hr>
+   <hr>
 
-    <h3 id="temario">Temario</h3>
-        <!-- con esto cada enlace nos llevara a un sección especifica de nuestra página-->
-        <ul>
-            <li><a href="#dif_texto">Diferencias entre un texto con y sin etiqueta</a></li>
-            <li><a href="#encabezados">Encabezados</a></li>
-            <li><a href="#e_basicas">Etiquetas de texto básicas</a></li>
-            <li><a href="#e_txt_semanticas">Etiquetas de texto Semanticas</a></li>
-            <li><a href="#e_saltos">Etiquetas de Saltos</a></li>
-            <li><a href="#e_formateo">Etiquetas de Formateo</a></li>
-            <li><a href="#e_semanticas_estructurales">Etiquetas Semanticas Estructurales</a></li>
-            <li><a href="#e_bloque_y_linea">Etiquetas de Bloque VS de Linea</a></li>
-            <li><a href="#estilos_css_html">Estilos CSS en HTML</a></li>
-            <li><a href="#imagenes">Imágenes</a></li>
-            <li><a href="#svg">SVG</a></li>
-            <li><a href="#figuras">Figuras</a></li>
-            <li><a href="#l_ordenadas">Listas Ordenadas</a></li>
-            <li><a href="#l_desordenadas">Listas desordenadas</a></li>
-            <li><a href="#l_definicion">Lista de Definición</a></li>
-            <li><a href="#tablas_sencillas">Tabla Sencilla</a></li>
-            <li><a href="#tablas_elaboradas">Tabla más elaborada</a></li>
-            <li><a href="#enlaces">Enlaces</a></li>
-            <li><a href="#scripts">Scripts </a></li>
-            <li><a href="#elementos-interactivos">Elemento Interactivos</a></li>
-            <li><a href="#audio-video">Audio y Video</a></li>
-            <li><a href="#iframes">Iframes</a></li>
-            <li><a href="#formularios">Elementos de Formulario</a></li>
-            <li><a href="#formulario">Creación de Formulario</a></li>
-            <li><a href="#formulario-contacto">Formulario de Contácto</a></li>
-            <li><a href="#data-atri">Data Attributes</a></li>
-            <li><a href="#metas-seo">MetaEtiquetas para SEO</a></li>
-        </ul>
-        <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd--> 
-    <hr>
+   <h3 id="temario">Temario</h3>
+   <!-- con esto cada enlace nos llevara a un sección especifica de nuestra página-->
+   <ul>
+      <li><a href="#dif_texto">Diferencias entre un texto con y sin etiqueta</a></li>
+      <li><a href="#encabezados">Encabezados</a></li>
+      <li><a href="#e_basicas">Etiquetas de texto básicas</a></li>
+      <li><a href="#e_txt_semanticas">Etiquetas de texto Semanticas</a></li>
+      <li><a href="#e_saltos">Etiquetas de Saltos</a></li>
+      <li><a href="#e_formateo">Etiquetas de Formateo</a></li>
+      <li><a href="#e_semanticas_estructurales">Etiquetas Semanticas Estructurales</a></li>
+      <li><a href="#e_bloque_y_linea">Etiquetas de Bloque VS de Linea</a></li>
+      <li><a href="#estilos_css_html">Estilos CSS en HTML</a></li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="#svg">SVG</a></li>
+      <li><a href="#figuras">Figuras</a></li>
+      <li><a href="#l_ordenadas">Listas Ordenadas</a></li>
+      <li><a href="#l_desordenadas">Listas desordenadas</a></li>
+      <li><a href="#l_definicion">Lista de Definición</a></li>
+      <li><a href="#tablas_sencillas">Tabla Sencilla</a></li>
+      <li><a href="#tablas_elaboradas">Tabla más elaborada</a></li>
+      <li><a href="#enlaces">Enlaces</a></li>
+      <li><a href="#scripts">Scripts </a></li>
+      <li><a href="#elementos-interactivos">Elemento Interactivos</a></li>
+      <li><a href="#audio-video">Audio y Video</a></li>
+      <li><a href="#iframes">Iframes</a></li>
+      <li><a href="#formularios">Elementos de Formulario</a></li>
+      <li><a href="#formulario">Creación de Formulario</a></li>
+      <li><a href="#formulario-contacto">Formulario de Contácto</a></li>
+      <li><a href="#data-atri">Data Attributes</a></li>
+      <li><a href="#metas-seo">MetaEtiquetas para SEO</a></li>
+      <li><a href="#acc-web">Accesibilidad WEB</a></li>
+   </ul>
+   <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd-->
+   <hr>
 
-    <h3 id="dif_texto"><u>Diferencias entre un texto con y sin etiqueta</u></h3>
-    <!-- con "ctrl" + " } " hacemos un bloque comentado en HTML"-->
-    <!-- esto es un comentario -->
-    <p>Hola REPASANDO HTML!</p>
-    <p>SALTO DE LINEA .___.</p>
-    <!-- entre la etiqueta "p" y un texto normal, la etiqueta
-        tiene un margen y espaciado ademas de tener espacio de bloque
-        por lo que el siguiente elemento despues de este hara un
-        salto de linea. En cambio un texto sin etiqueta no tendra
-        la propiedad en bloque.(el texto con etiqueta "p" respetara el espacio que le demos almenos de un solo 
-        espaciado)-->
-    
-        Ejemplo de texto sin etiqueta     
-        no habra saltos de linea.  <!-- nuestros Textos deben ir siempre envueltos en una etiqueta -->
-    
-    <hr>
+   <h3 id="dif_texto"><u>Diferencias entre un texto con y sin etiqueta</u></h3>
+   <!-- con "ctrl" + " } " hacemos un bloque comentado en HTML"-->
+   <!-- esto es un comentario -->
+   <p>Hola REPASANDO HTML!</p>
+   <p>SALTO DE LINEA .___.</p>
+   <!-- entre la etiqueta "p" y un texto normal, la etiqueta
+         tiene un margen y espaciado ademas de tener espacio de bloque
+         por lo que el siguiente elemento despues de este hara un
+         salto de linea. En cambio un texto sin etiqueta no tendra
+         la propiedad en bloque.(el texto con etiqueta "p" respetara el espacio que le demos almenos de un solo 
+         espaciado)-->
 
-    <h3 id="encabezados"><u>Encabezados</u></h3>
-    <!-- Encabezados -->   
-    <h4>Etiquetas <u class="e">&lt;h1&gt;</u> y sucesivamente hasta el <u class="e">&lt;h6&gt;</u></h4>
-    <!-- Utilizo código difente para colocar los "picoparentesis" porque colocarlos asi nomas no me permitiria
-        añadirlos porque VS me los interpreta como etiquetas a utilizar--> 
+   Ejemplo de texto sin etiqueta
+   no habra saltos de linea. <!-- nuestros Textos deben ir siempre envueltos en una etiqueta -->
 
-    <h1>Encabezado de nivel 1</h1> <!-- Solo debe haber un h1 por documento html-->
-    <h2>Encabezado de nivel 2</h2>
-    <h3 style="color: black;">Encabezado de nivel 3</h3>
-    <h4>Encabezado de nivel 4</h4>
-    <h5>Encabezado de nivel 5</h5>
-    <h6>Encabezado de nivel 6</h6>
-    <a href="#inicio">Inicio🔝</a>
-    
-    <h4>Etiqueta <u class="e">&lt;p&gt;</u></h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi illo ipsa aut repudiandae asperiores hic consequuntur sapiente distinctio unde veritatis maiores pariatur quo sunt ratione perspiciatis 
-        exercitationem, dicta aliquid.</p>
-    
-    <hr>
+   <hr>
 
-    <h3 id="e_basicas"><u>Etiquetas de texto básicas</u></h3>
-    <!--Etiquetas de texto básicas-->
-    <h4>Etiquetas <span class="e"><u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u> <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u>, 
-        <u>&lt;small&gt;</u> y <u>&lt;del&gt;</u></span></h4>
-    <p>
-        Palabras en: <b>Negrita</b>, <i>Italica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, h<sub>2</sub>o
-        , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>, <del>Texto borrado</del>
-    </p>
-    <a href="#inicio">Inicio🔝</a>
-    <hr>
-    
-    <h3 id="e_txt_semanticas"><u>Etiquetas de texto Semanticas</u></h3>
-    <!-- Semanticas (importantes a la hora de redactar textos)-->
-    
-    <h4>Etiquetas <u class="e">&lt;strong&gt;</u> y <u class="e">&lt;em&gt;</u></h4>
-    <p>
-        <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
-    </p>
-    
-    <!-- Para colocar una frase ó cita textual-->
-    
-    <h4>Etiquetas <span class="e"><u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u></span> y <u class="e">&lt;span&gt;</u></h4>
-    <blockquote>Yo sólo sé, que nada se.</blockquote>
-    <cite>Sócrates</cite> <br><br>
-    <span>con "<strong>Span</strong>" podemos agregarle estilos a una pequeña parte de un texto
-            o varias que tengan esta misma etiqueta ó siendo más especificos
-            agregando una clase. (span sirve para manipular partes de código
-            a conveniencia con css y no nos da ningun estilo como en otras
-            etiquetas).
-    </span> <br>
-    <a href="#inicio">Inicio🔝</a>
-    
-    <hr>
-    
-    <h3 id="e_saltos"><u>Etiquetas de Saltos</u></h3> 
-    <!-- Etiquetas de Saltos -->
-    
-        <h4>Etiquetas <u class="e">&lt;br&gt;</u> y <u class="e">&lt;hr&gt;</u></h4> 
+   <h3 id="encabezados"><u>Encabezados</u></h3>
+   <!-- Encabezados -->
+   <h4>Etiquetas <u class="e">&lt;h1&gt;</u> y sucesivamente hasta el <u class="e">&lt;h6&gt;</u></h4>
+   <!-- Utilizo código difente para colocar los "picoparentesis" porque colocarlos asi nomas no me permitiria
+         añadirlos porque VS me los interpreta como etiquetas a utilizar-->
 
-        <p>    <!-- "br" hace un salto de linea -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, 
-            quis! Molestiae, corrupti <br> sunt vero magnam quia esse eum recusandae odit quae 
-            a obcaecati, animi facere debitis odio, tempora maiores neque.
-        </p>
+   <h1>Encabezado de nivel 1</h1> <!-- Solo debe haber un h1 por documento html-->
+   <h2>Encabezado de nivel 2</h2>
+   <h3 style="color: black;">Encabezado de nivel 3</h3>
+   <h4>Encabezado de nivel 4</h4>
+   <h5>Encabezado de nivel 5</h5>
+   <h6>Encabezado de nivel 6</h6>
+   <a href="#inicio">Inicio🔝</a>
 
-        <!-- "hr" sirve para dividr secciones de nuestra página-->
-        <hr>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing el
-            it. Quidem, saepe fuga quibusdam doloremque ipsa, natus officiis, autem iure quis dolor alias modi consequatur nemo! Explicabo ad enim sapiente nostrum rerum?
-        </p>
+   <h4>Etiqueta <u class="e">&lt;p&gt;</u></h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi illo ipsa aut repudiandae asperiores hic
+      consequuntur sapiente distinctio unde veritatis maiores pariatur quo sunt ratione perspiciatis
+      exercitationem, dicta aliquid.</p>
 
-    <hr>
+   <hr>
 
-    <h3 id="e_formateo"><u>Etiquetas de Formateo</u></h3> 
-    <!--Etiquetas de Formateo-->
-    <h4>Etiqueta <u class="e">&lt;pre&gt;</u> </h4>
+   <h3 id="e_basicas"><u>Etiquetas de texto básicas</u></h3>
+   <!--Etiquetas de texto básicas-->
+   <h4>Etiquetas <span class="e"><u>&lt;b&gt;</u>, <u>&lt;i&gt;</u>, <u>&lt;u&gt;</u>, <u>&lt;sup&gt;</u>
+         <u>&lt;sub&gt;</u>, <u>&lt;mark&gt;</u>,
+         <u>&lt;small&gt;</u> y <u>&lt;del&gt;</u></span></h4>
+   <p>
+      Palabras en: <b>Negrita</b>, <i>Italica</i>, <u>Subrayado</u>, e=mc<sup>2</sup>, h<sub>2</sub>o
+      , <mark>marcaTexto</mark>, <small>Letras pequeñas</small>, <del>Texto borrado</del>
+   </p>
+   <a href="#inicio">Inicio🔝</a>
+   <hr>
 
-        <pre> <!-- va hacer que el navegador respete el formato que estes empleando , con sus espacios y todo-->
-        -HTML
+   <h3 id="e_txt_semanticas"><u>Etiquetas de texto Semanticas</u></h3>
+   <!-- Semanticas (importantes a la hora de redactar textos)-->
+
+   <h4>Etiquetas <u class="e">&lt;strong&gt;</u> y <u class="e">&lt;em&gt;</u></h4>
+   <p>
+      <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
+   </p>
+
+   <!-- Para colocar una frase ó cita textual-->
+
+   <h4>Etiquetas <span class="e"><u>&lt;blockquote&gt;</u>, <u>&lt;cite&gt;</u></span> y <u class="e">&lt;span&gt;</u>
+   </h4>
+   <blockquote>Yo sólo sé, que nada se.</blockquote>
+   <cite>Sócrates</cite> <br><br>
+   <span>con "<strong>Span</strong>" podemos agregarle estilos a una pequeña parte de un texto
+      o varias que tengan esta misma etiqueta ó siendo más especificos
+      agregando una clase. (span sirve para manipular partes de código
+      a conveniencia con css y no nos da ningun estilo como en otras
+      etiquetas).
+   </span> <br>
+   <a href="#inicio">Inicio🔝</a>
+
+   <hr>
+
+   <h3 id="e_saltos"><u>Etiquetas de Saltos</u></h3>
+   <!-- Etiquetas de Saltos -->
+
+   <h4>Etiquetas <u class="e">&lt;br&gt;</u> y <u class="e">&lt;hr&gt;</u></h4>
+
+   <p> <!-- "br" hace un salto de linea -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+      quis! Molestiae, corrupti <br> sunt vero magnam quia esse eum recusandae odit quae
+      a obcaecati, animi facere debitis odio, tempora maiores neque.
+   </p>
+
+   <!-- "hr" sirve para dividr secciones de nuestra página-->
+   <hr>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing el
+      it. Quidem, saepe fuga quibusdam doloremque ipsa, natus officiis, autem iure quis dolor alias modi consequatur
+      nemo! Explicabo ad enim sapiente nostrum rerum?
+   </p>
+
+   <hr>
+
+   <h3 id="e_formateo"><u>Etiquetas de Formateo</u></h3>
+   <!--Etiquetas de Formateo-->
+   <h4>Etiqueta <u class="e">&lt;pre&gt;</u> </h4>
+
+   <pre> <!-- va hacer que el navegador respete el formato que estes empleando , con sus espacios y todo-->
+         -HTML
             -Terminar de grabar las secciones de este curso.
             -Editar en un sólo Video.
-        -CSS
+         -CSS
             -Comenzar a grabar secciones CSS.
             -Editar en un sólo Video.
-        </pre>
-    </p>
+      </pre>
+   </p>
 
-    <h4>Etiqueta <u class="e">&lt;code&gt;</u></h4>
-    <p>  <!-- Formato de código (la tipografia)-->
-        <code>
+   <h4>Etiqueta <u class="e">&lt;code&gt;</u></h4>
+   <p> <!-- Formato de código (la tipografia)-->
+      <code>
             Este texto esta en formato de código
-        </code>
-    </p>
+      </code>
+   </p>
 
-    <h4>Etiqueta <u class="e">&lt;pre&gt;</u> + <u class="e">&lt;code&gt;</u></h4>
-    <p>    <!-- Combinando ambas etiquetas podriamos implementar ejemplos de código en nuestro sitio web -->
-        <pre>
+   <h4>Etiqueta <u class="e">&lt;pre&gt;</u> + <u class="e">&lt;code&gt;</u></h4>
+   <p> <!-- Combinando ambas etiquetas podriamos implementar ejemplos de código en nuestro sitio web -->
+   <pre>
             <code>
                 // Función para sumar dos números
-                function sumar(a, b) {
-                return a + b;
-                }
+                  function sumar(a, b) {
+                  return a + b;
+               }
             </code>
-        </pre>
-    </p>
-    <a href="#inicio">Inicio🔝</a>
+         </pre>
+   </p>
+   <a href="#inicio">Inicio🔝</a>
 
-    <hr>
+   <hr>
 
-    <h3 id="e_semanticas_estructurales"><u>Etiquetas Semanticas Estructurales</u></h3>  
-    <!-- Etiquetas Semanticas Estructurales-->
-        <!-- Antes de utilizar etiquetas "div" como contenedores debemos utilizar las etiquetas contenedoras
+   <h3 id="e_semanticas_estructurales"><u>Etiquetas Semanticas Estructurales</u></h3>
+   <!-- Etiquetas Semanticas Estructurales-->
+   <!-- Antes de utilizar etiquetas "div" como contenedores debemos utilizar las etiquetas contenedoras
             semanticas como buena practica y poder entender mejor lo que hacemos. -->
-        <!-- No hay una regla para usar una unica vez estas etiquetas, excepto por el "main".
+   <!-- No hay una regla para usar una unica vez estas etiquetas, excepto por el "main".
             podemos combinarlas y jugar con las etiquetas, claro , siendo coherente. (esto en interfaces más
             complejas)-->
-    <h4>Etiqueta  <u class="e">&lt;div&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;div&gt;</u></h4>
 
-    <div>Es una etiqueta contenedora que no tiene <strong>semantica</strong></div>
+   <div>Es una etiqueta contenedora que no tiene <strong>semantica</strong></div>
 
-    <h4> <u>Etiquetas con Semantica (con significado)</u></h4>
+   <h4> <u>Etiquetas con Semantica (con significado)</u></h4>
 
-    <h4>Etiqueta <u class="e">&lt;header&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;header&gt;</u></h4>
 
-    <header>
-        header - Cabecera de un sitio web o de una sección
-        (generalmente se le coloca el nav aqui)
-    </header>
+   <header>
+      header - Cabecera de un sitio web o de una sección
+      (generalmente se le coloca el nav aqui)
+   </header>
 
-    <h4>Etiqueta <u class="e">&lt;main&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;main&gt;</u></h4>
 
-    <main>
-        main - Define la sección principal del documento, sólo puede existir una
-        etiqueta main por documento
-    </main>
+   <main>
+      main - Define la sección principal del documento, sólo puede existir una
+      etiqueta main por documento
+   </main>
 
-    <h4>Etiqueta <u class="e">&lt;footer&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;footer&gt;</u></h4>
 
-    <footer>
-        footer - Pie de página de un sitio web o de una sección
-        
-    </footer>
+   <footer>
+      footer - Pie de página de un sitio web o de una sección
 
-    <h4>Etiqueta <u class="e">&lt;nav&gt;</u></h4>
+   </footer>
 
-    <nav>
-        nav - Representa una navegación (un conjunto de enlaces que formen un menú de navegación)
-        tambien puede ser una botonera. 
-    </nav>
+   <h4>Etiqueta <u class="e">&lt;nav&gt;</u></h4>
 
-    <h4>Etiqueta <u class="e">&lt;article&gt;</u></h4>
+   <nav>
+      nav - Representa una navegación (un conjunto de enlaces que formen un menú de navegación)
+      tambien puede ser una botonera.
+   </nav>
 
-    <article>
-        article - representa una sección de autocontenido (que por si sola se 
-        explica).
-        <!-- este puede tener su propio footer, aparte del footer principal de la página.
+   <h4>Etiqueta <u class="e">&lt;article&gt;</u></h4>
+
+   <article>
+      article - representa una sección de autocontenido (que por si sola se
+      explica).
+      <!-- este puede tener su propio footer, aparte del footer principal de la página.
             cpodemos reconocer un article porque se explica solo, como en un sitio web de noticias
-            donde aparecen cards con información que te da el contexto.--> 
-    </article>
+            donde aparecen cards con información que te da el contexto.-->
+   </article>
 
-    <h4>Etiqueta <u class="e">&lt;aside&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;aside&gt;</u></h4>
 
-    <aside>
-        aside - Representa contenido complementario o secundario (como un "articulos
-        relacionados"). Tambien nos sirve para colocar zonas de publicidad
-    </aside>
+   <aside>
+      aside - Representa contenido complementario o secundario (como un "articulos
+      relacionados"). Tambien nos sirve para colocar zonas de publicidad
+   </aside>
 
-    <h4>Etiqueta <u class="e">&lt;section&gt;</u></h4>
+   <h4>Etiqueta <u class="e">&lt;section&gt;</u></h4>
 
-    <section>
-        section - Representa una sección de contenido genérico.
-    </section>
-    
-    <h4>Etiqueta <u class="e">&lt;address&gt;</u></h4>
+   <section>
+      section - Representa una sección de contenido genérico.
+   </section>
 
-    <address>
-        address - Representa una dirección fisica.
-    </address>
-    <a href="#inicio">Inicio🔝</a>
+   <h4>Etiqueta <u class="e">&lt;address&gt;</u></h4>
 
-    <!-- Ejemplos : 
-        el panel que aparece con las diferentes opciones de Youtube como biblioteca,
-        suscripciones, principal, etc, vendria siendo un "nav". En la interfaz de youtube
-        lo más importante es el video y la información del video en el que estamos
-        sus views, el canal que hizo el video, sus estadisticas y estarian
-        dentro de una etiqueta "main" y la zona de los videos sugeridos vendrian
-        siendo un "aside" y cada una de las miniaturas de los videos sugeridos podrian
-        ser un "article" porque se explican , se dan contexto por si mismo.
-        La sección donde estan los comentarios podrian ser una "section" y
-        cada comentario un article.-->
+   <address>
+      address - Representa una dirección fisica.
+   </address>
+   <a href="#inicio">Inicio🔝</a>
 
-    <!-- Consejo
-        Analizar las interfaces web que generalmente consumes, diviendo las
-        secciones y vayas diciendo "quizas esto puede ir en un nav, en un
-        article, etc." La semantica siempre va depender de las necesidades
-        del contenido que tienes"
-    -->
+   <!-- Ejemplos : 
+         el panel que aparece con las diferentes opciones de Youtube como biblioteca,
+         suscripciones, principal, etc, vendria siendo un "nav". En la interfaz de youtube
+         lo más importante es el video y la información del video en el que estamos
+         sus views, el canal que hizo el video, sus estadisticas y estarian
+         dentro de una etiqueta "main" y la zona de los videos sugeridos vendrian
+         siendo un "aside" y cada una de las miniaturas de los videos sugeridos podrian
+         ser un "article" porque se explican , se dan contexto por si mismo.
+         La sección donde estan los comentarios podrian ser una "section" y
+         cada comentario un article.-->
 
-    <hr>
+   <!-- Consejo
+         Analizar las interfaces web que generalmente consumes, diviendo las
+         secciones y vayas diciendo "quizas esto puede ir en un nav, en un
+         article, etc." La semantica siempre va depender de las necesidades
+         del contenido que tienes"
+      -->
 
-    <h3 id="e_bloque_y_linea">Etiquetas de <u>Bloque</u> VS Etiquetas de <u>Linea</u></h3>
-        <!-- Podemos agregarles estilos mediante el atributo style (no es lo correcto
+   <hr>
+
+   <h3 id="e_bloque_y_linea">Etiquetas de <u>Bloque</u> VS Etiquetas de <u>Linea</u></h3>
+   <!-- Podemos agregarles estilos mediante el atributo style (no es lo correcto
             pero lo hacemos para el ejemplo)-->
 
-            <!--#1 ejemplo de estilos en HTML con el atributo "style"-->
+   <!--#1 ejemplo de estilos en HTML con el atributo "style"-->
 
-    <div style="background-color: yellow; color: red;">La etiqueta de bloque más representativa por excelencia es &lt;div&gt;,
-        una etiqueta que genera saltos de linea con sus etiquetas hermanas. (osea
-        abarca todo el espacio de la linea donde este)
-        <!--abarcan todo el espacio y generan saltos de linea si hay otra etiqueta-->
-    </div>
-    <span style="background-color: green;">La etiqueta de linea por excelencia es &lt;span&gt;, una etiqueta de Linea sólo ocupa espacio
-        según su contenido. (lo necesario)
-        <!-- estas no generan saltos de linea de arriba ni de abajo-->
-    </span>
-    <span style="background-color: blueviolet;">Otra &lt;span&gt; de ejemplo</span>
+   <div style="background-color: yellow; color: red;">La etiqueta de bloque más representativa por excelencia es
+      &lt;div&gt;,
+      una etiqueta que genera saltos de linea con sus etiquetas hermanas. (osea
+      abarca todo el espacio de la linea donde este)
+      <!--abarcan todo el espacio y generan saltos de linea si hay otra etiqueta-->
+   </div>
+   <span style="background-color: green;">La etiqueta de linea por excelencia es &lt;span&gt;, una etiqueta de Linea
+      sólo ocupa espacio
+      según su contenido. (lo necesario)
+      <!-- estas no generan saltos de linea de arriba ni de abajo-->
+   </span>
+   <span style="background-color: blueviolet;">Otra &lt;span&gt; de ejemplo</span>
 
-    <hr>
+   <hr>
 
-    <h3 id="estilos_css_html">Estilos <u>CSS</u> en <u>HTML</u></h3> 
+   <h3 id="estilos_css_html">Estilos <u>CSS</u> en <u>HTML</u></h3>
 
-    <h4>#1 Con el atributo <u>style</u> dentro de una etiqueta</h4>
-    <h4>#2 Con la etiqueta <u>Style</u> en el head (buena practica)</h4>
-    <h4>#3 Utilizando un archivo CSS y enlazarlo a nuestro documento HTML mediante la etiqueta &lt;link&gt;
-        (Es la mejor y de buena practica, nos ayuda a mantener todo ordenado)
-    </h4>
-    <h5>Consejo : Utilizar una carpeta "assets" para colocar dentro subcarpetas con las hojas de estilos(CSS),
-        Scripts(JS), Imagenes(IMG), etc. (Todos los recursos de nuestro proyecto para que este bien ordenados y organizados)
-    </h5>
-    <a href="#inicio">Inicio🔝</a>
+   <h4>#1 Con el atributo <u>style</u> dentro de una etiqueta</h4>
+   <h4>#2 Con la etiqueta <u>Style</u> en el head (buena practica)</h4>
+   <h4>#3 Utilizando un archivo CSS y enlazarlo a nuestro documento HTML mediante la etiqueta &lt;link&gt;
+      (Es la mejor y de buena practica, nos ayuda a mantener todo ordenado)
+   </h4>
+   <h5>Consejo : Utilizar una carpeta "assets" para colocar dentro subcarpetas con las hojas de estilos(CSS),
+      Scripts(JS), Imagenes(IMG), etc. (Todos los recursos de nuestro proyecto para que este bien ordenados y
+      organizados)
+   </h5>
+   <a href="#inicio">Inicio🔝</a>
 
-    <hr>
+   <hr>
 
-    <h3 id="imagenes"><u>Imágenes</u></h3>  
+   <h3 id="imagenes"><u>Imágenes</u></h3>
 
-    <img src="assets/images/periodic_table_html.jpg" alt="Tabla Periodica HTML">
-    <img src="assets/images/duck.gif" alt="pato caminando">
-    <img src="assets/images/ES-SemanticGeneral-Search.png" alt="Estructura Semantica HTML">
-    <img src="assets/images/EstructuraHTML.jpg" alt="HTML estructura">
-    
-    <hr>
-    
-    <h3 id="svg"><u>SVG</u></h3>  
-    
-    <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Escudo Nacional del Perú SVG">
-    <img src="assets/images/Greater_coat_of_arms_of_the_United_States.svg.webp" alt="USA">
+   <img src="assets/images/periodic_table_html.jpg" alt="Tabla Periodica HTML">
+   <img src="assets/images/duck.gif" alt="pato caminando">
+   <img src="assets/images/ES-SemanticGeneral-Search.png" alt="Estructura Semantica HTML">
+   <img src="assets/images/EstructuraHTML.jpg" alt="HTML estructura">
 
-    <hr>
+   <hr>
 
-    <h3 id="figuras"><u>Figuras</u></h3>
+   <h3 id="svg"><u>SVG</u></h3>
 
-    <figure>
-        <!-- Es un contenedor semantico utilizado para agrupar contenido relacionado como
+   <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Escudo Nacional del Perú SVG">
+   <img src="assets/images/Greater_coat_of_arms_of_the_United_States.svg.webp" alt="USA">
+
+   <hr>
+
+   <h3 id="figuras"><u>Figuras</u></h3>
+
+   <figure>
+      <!-- Es un contenedor semantico utilizado para agrupar contenido relacionado como
             imágenes, graficos, ilustraciones y su correspondiente leyenda o pie de página -->
-        <img src="assets/images/periodic_table_html.jpg" alt="Tabla de los elementos HTML">
-        <figcaption>Tabla de los elementos HTML</figcaption>
-    </figure>
-    <a href="#inicio">Inicio🔝</a>
-    
-    <hr>
+      <img src="assets/images/periodic_table_html.jpg" alt="Tabla de los elementos HTML">
+      <figcaption>Tabla de los elementos HTML</figcaption>
+   </figure>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="l_ordenadas"><u>Listas Ordenadas</u></h3>  
-    <h4>Utiliza <span class="e">&lt;ol&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
-    <h4>Las estaciones del año</h4>
+   <hr>
 
-    <!-- La lista se comienza por una etiqueta ol y sus items con li-->
-    <ol>   
-        <li>Primavera</li>
-        <li>Verano</li>
-        <li>Otoño</li>
-        <li>Inviero</li>
-    </ol>
-    <!-- Podemos cambiar el order de la lista con la etiqueta-->
-    <ol start="3">
-        <li>Primavera</li>
-        <li >Verano</li>
-        <li>Otoño</li>
-        <li>Inviero</li>
-    </ol>
+   <h3 id="l_ordenadas"><u>Listas Ordenadas</u></h3>
+   <h4>Utiliza <span class="e">&lt;ol&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
+   <h4>Las estaciones del año</h4>
 
-    <ol type="I"> <!--Podemos escoger el tipo de enúmeración-->  
-        <li>Primavera</li>
-        <li>Verano</li>
-        <li>Otoño</li>
-        <li>Inviero</li>
-    </ol>
+   <!-- La lista se comienza por una etiqueta ol y sus items con li-->
+   <ol>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Inviero</li>
+   </ol>
+   <!-- Podemos cambiar el order de la lista con la etiqueta-->
+   <ol start="3">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Inviero</li>
+   </ol>
 
-    <hr>
+   <ol type="I"> <!--Podemos escoger el tipo de enúmeración-->
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Inviero</li>
+   </ol>
 
-    <h3 id="l_desordenadas"><u>Listas desordenadas</u></h3>
-    <h4>Utiliza <span class="e">&lt;ul&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
-    <h4>Cosas por hacer</h4>
-    
-    <h5>con circulos (predeterminado)</h5>
-    <ul> <!-- figura circular predeterminada-->
-        <li>Estudiar SQL</li>
-        <li>Estudiar HTML</li>
-        <li>Estudiar CSS</li>
-        <li>Javascript</li>
-        <li>Java</li>
-    </ul>
+   <hr>
 
-    <h5>Con cuadrados</h5>
+   <h3 id="l_desordenadas"><u>Listas desordenadas</u></h3>
+   <h4>Utiliza <span class="e">&lt;ul&gt;</span> y <span class="e">&lt;li&gt;</span></h4>
+   <h4>Cosas por hacer</h4>
 
-    <ul type="square"> <!-- con cuadrados--> 
-        <li>Estudiar SQL</li>
-        <li>Estudiar HTML</li>
-        <li>Estudiar CSS</li>
-        <li>Javascript</li>
-        <li>Java</li>
-    </ul>
+   <h5>con circulos (predeterminado)</h5>
+   <ul> <!-- figura circular predeterminada-->
+      <li>Estudiar SQL</li>
+      <li>Estudiar HTML</li>
+      <li>Estudiar CSS</li>
+      <li>Javascript</li>
+      <li>Java</li>
+   </ul>
 
-    <h5>Con circulos blancos en el medio</h5>
+   <h5>Con cuadrados</h5>
 
-    <ul type="circle"> <!-- con cuadrados--> 
-        <li>Estudiar SQL</li>
-        <li>Estudiar HTML</li>
-        <li>Estudiar CSS</li>
-        <li>Javascript</li>
-        <li>Java</li>
-    </ul>
+   <ul type="square"> <!-- con cuadrados-->
+      <li>Estudiar SQL</li>
+      <li>Estudiar HTML</li>
+      <li>Estudiar CSS</li>
+      <li>Javascript</li>
+      <li>Java</li>
+   </ul>
 
-    <hr>
+   <h5>Con circulos blancos en el medio</h5>
 
-    <h3 id="l_definicion">Listas de Definición</h3>
-    <h4>Utiliza <span class="e">&lt;dl&gt;</span>, <span class="e">&lt;dt&gt;</span> y <span class="e">&lt;dd&gt;</span></h4>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Es un lenguaje de marcado que define la estructura de nuestras páginas web.</dd>
-        <dt>CSS</dt>
-        <dd>Es un lenguaje de definición de estilos para nuestros códigos HTML.</dd>
-        <dt>Javascript</dt>
-        <dd>Es el lenguaje de la WEB, utilizada para dar interactividad.</dd>
-    </dl>
-    <a href="#inicio">Inicio🔝</a>
+   <ul type="circle"> <!-- con cuadrados-->
+      <li>Estudiar SQL</li>
+      <li>Estudiar HTML</li>
+      <li>Estudiar CSS</li>
+      <li>Javascript</li>
+      <li>Java</li>
+   </ul>
 
-    <hr>
+   <hr>
 
-    <h3 id="tablas_sencillas">Tablas Sencillas</h3>
-    <h4>Utilizamos las etiquetas <span class="e">&lt;table&gt;</span>, <span class="e">&lt;tr&gt;</span>(table row) y 
-    <span class="e">&lt;td&gt;</span>(table data)</h4>
-    
-    <table>
-        <tr>
-            <td>Nombre</td>
-            <td>Constelación</td>
-            <td>Tipo</td>
-        </tr>
-        <tr>
+   <h3 id="l_definicion">Listas de Definición</h3>
+   <h4>Utiliza <span class="e">&lt;dl&gt;</span>, <span class="e">&lt;dt&gt;</span> y <span class="e">&lt;dd&gt;</span>
+   </h4>
+   <dl>
+      <dt>HTML</dt>
+      <dd>Es un lenguaje de marcado que define la estructura de nuestras páginas web.</dd>
+      <dt>CSS</dt>
+      <dd>Es un lenguaje de definición de estilos para nuestros códigos HTML.</dd>
+      <dt>Javascript</dt>
+      <dd>Es el lenguaje de la WEB, utilizada para dar interactividad.</dd>
+   </dl>
+   <a href="#inicio">Inicio🔝</a>
+
+   <hr>
+
+   <h3 id="tablas_sencillas">Tablas Sencillas</h3>
+   <h4>Utilizamos las etiquetas <span class="e">&lt;table&gt;</span>, <span class="e">&lt;tr&gt;</span>(table row) y
+      <span class="e">&lt;td&gt;</span>(table data)
+   </h4>
+
+   <table>
+      <tr>
+         <td>Nombre</td>
+         <td>Constelación</td>
+         <td>Tipo</td>
+      </tr>
+      <tr>
+         <td>Ikki</td>
+         <td>Fenix</td>
+         <td>Bronce</td>
+      </tr>
+      <tr>
+         <td>Shaina</td>
+         <td>Ofiuco</td>
+         <td>Plata</td>
+      </tr>
+      <tr>
+         <td>Saga</td>
+         <td>Géminis</td>
+         <td>Dorado</td>
+      </tr>
+   </table>
+
+   <hr>
+
+   <h3 id="tablas_elaboradas"><u>Tabla más elaborada</u></h3>
+
+   <!-- Estas tienen 3 agrupadores de fila  <thead> (como el head), <tbody>(para el contenido, osea los datos)
+         y <tfoot> para el pie de tabla-->
+   <table>
+      <thead> <!-- todas van dentro de etiquetas <tr> -->
+         <tr> <!-- el thead y tfoot cambian el <td> por <th>(significa table head)-->
+            <th colspan="3">Tabla de los Santos de Athena</th>
+         </tr> <!-- con colspan podemos combinar celdas colocando entre las comillas-->
+         <tr> <!-- el número de columnas quieres que ocupe dicha fila-->
+            <th>Nombre</th>
+            <th>Constelación</th>
+            <th>Tipo</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
             <td>Ikki</td>
             <td>Fenix</td>
             <td>Bronce</td>
-        </tr>
-        <tr>
-            <td>Shaina</td>
-            <td>Ofiuco</td>
+         </tr>
+         <tr>
+            <td>Mistry</td>
+            <td>Lagarto</td>
             <td>Plata</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
             <td>Saga</td>
             <td>Géminis</td>
             <td>Dorado</td>
-        </tr>
-    </table>
+         </tr>
+         <tr>
+            <td>Shaina</td>
+            <td rowspan="2">Ofiuco</td> <!-- con rowspan podemos combinar celdas colocando entre las comillas el-->
+            <td>Plata</td> <!-- número de filas que desees que ocupe dicha fila-->
+         </tr>
+         <tr>
+            <td>Odiseo</td>
+            <td>Dorado</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
+         </tr>
+      </tfoot>
+   </table>
+   <a href="#inicio">Inicio🔝</a>
 
-    <hr>
+   <hr>
 
-    <h3 id="tablas_elaboradas"><u>Tabla más elaborada</u></h3>
+   <h3 id="enlaces"><u>Enlaces</u></h3>
+   <h4>Etiqueta <u class="e">&lt;a&gt;</u></h4>
+   <!-- Con esta etiqueta podemos enlazar nuestro archivo HTML con otro archivo HTML-->
 
-    <!-- Estas tienen 3 agrupadores de fila  <thead> (como el head), <tbody>(para el contenido, osea los datos)
-        y <tfoot> para el pie de tabla-->
-    <table>
-        <thead>       <!-- todas van dentro de etiquetas <tr> -->
-            <tr>      <!-- el thead y tfoot cambian el <td> por <th>(significa table head)-->
-                <th colspan="3">Tabla de los Santos de Athena</th>
-            </tr>                          <!-- con colspan podemos combinar celdas colocando entre las comillas-->
-            <tr>                           <!-- el número de columnas quieres que ocupe dicha fila-->
-                <th>Nombre</th>
-                <th>Constelación</th>
-                <th>Tipo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ikki</td>
-                <td>Fenix</td>
-                <td>Bronce</td>
-            </tr>
-            <tr>
-                <td>Mistry</td>
-                <td>Lagarto</td>
-                <td>Plata</td>
-            </tr>
-            <tr>
-                <td>Saga</td>
-                <td>Géminis</td>
-                <td>Dorado</td>
-            </tr>
-            <tr>
-                <td>Shaina</td>
-                <td rowspan="2">Ofiuco</td>  <!-- con rowspan podemos combinar celdas colocando entre las comillas el-->
-                <td>Plata</td>                <!-- número de filas que desees que ocupe dicha fila-->
-            </tr>
-            <tr>
-                <td>Odiseo</td>
-                <td>Dorado</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
-            </tr>
-        </tfoot>
-    </table>
-    <a href="#inicio">Inicio🔝</a>
-    
-    <hr>
+   <a href="EnlaceEjemplo.html">Página de ejemplo para enlaces</a> <br>
+   <a href="https://www.linkedin.com/in/juan-samuel-salazar-alarc%C3%B3n-41798929a/" target="_blank" rel="nofollow">Mi
+      perfil Linkedin</a> <br>
+   <a href="https://github.com/Samu43lz" target="_blank" rel="nofollow">Visita mi repositorio de Github</a> <br>
+   <!-- Para enlaces externos se recomienda usar el atributo target y rel -->
+   <!-- Tambien podemos utilizar vectores/SVG/Imagenes normales/Gifs, etc.-->
+   <h4>Colocando la etiqueta <u class="e">&lt;img&gt;</u> dentro de la etiqueta <u class="e">&lt;a&gt;</u></h4>
+   <a href="EnlaceEjemplo.html">
+      <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Link con SVG">
+   </a> <br>
+   <!-- Enlaces de Contácto -->
+   <a href="mailto:widosrevel@gmail.com">Enlace a Correo Electronico</a>
+   <!-- Dependiendo si tenemos la función activada ó si estamos en PC o Movil.-->
+   <br>
+   <a href="tel:51999666555">Enlace a Número de Teléfono</a> <!-- Brindara nuestro número de telefono al usuario-->
+   <br>
+   <!-- Un enlace a nuestro chat de whatsapp con la api de esta misma-->
+   <a href="https://api.WhatsApp.com/send?phone=51928270391&text=Charlemos, haz preguntas, comenzemos tu proyecto"
+      target="_blank">Enlace hacia WhatsApp</a>
+   <br>
+   <a href="#inicio">Inicio🔝</a>
+   <hr>
 
-    <h3 id="enlaces"><u>Enlaces</u></h3>
-    <h4>Etiqueta <u class="e">&lt;a&gt;</u></h4>
-    <!-- Con esta etiqueta podemos enlazar nuestro archivo HTML con otro archivo HTML-->
-    
-    <a href="EnlaceEjemplo.html">Página de ejemplo para enlaces</a> <br>
-    <a href="https://www.linkedin.com/in/juan-samuel-salazar-alarc%C3%B3n-41798929a/" target="_blank" rel="nofollow">Mi perfil Linkedin</a> <br>
-    <a href="https://github.com/Samu43lz" target="_blank" rel="nofollow">Visita mi repositorio de Github</a> <br>
-    <!-- Para enlaces externos se recomienda usar el atributo target y rel -->
-    <!-- Tambien podemos utilizar vectores/SVG/Imagenes normales/Gifs, etc.-->
-    <h4>Colocando la etiqueta <u class="e">&lt;img&gt;</u> dentro de la etiqueta <u class="e">&lt;a&gt;</u></h4>
-    <a href="EnlaceEjemplo.html">
-        <img src="assets/images/Escudo_nacional_del_Perú.svg.png" alt="Link con SVG">
-    </a> <br>
-    <!-- Enlaces de Contácto -->
-    <a href="mailto:widosrevel@gmail.com">Enlace a Correo Electronico</a> <!-- Dependiendo si tenemos la función activada ó si estamos en PC o Movil.-->
-    <br>
-    <a href="tel:51999666555">Enlace a Número de Teléfono</a>  <!-- Brindara nuestro número de telefono al usuario-->
-    <br>
-    <!-- Un enlace a nuestro chat de whatsapp con la api de esta misma-->
-    <a href="https://api.WhatsApp.com/send?phone=51928270391&text=Charlemos, haz preguntas, comenzemos tu proyecto" target="_blank">Enlace hacia WhatsApp</a>
-    <br>
-    <a href="#inicio">Inicio🔝</a>
-    <hr>
+   <h3 id="elementos-interactivos">Elementos Interactivos</h3>
 
-    <h3 id="elementos-interactivos">Elementos Interactivos</h3>
+   <button onclick="alert('hola haz clickeado el botón')">Este es un botón</button> <br>
+   <!--Colocar un elemento interactivo dentro de de etiquetas es de mala practica, pero sirve de ejemplo-->
 
-    <button onclick="alert('hola haz clickeado el botón')">Este es un botón</button> <br>
-    <!--Colocar un elemento interactivo dentro de de etiquetas es de mala practica, pero sirve de ejemplo-->
-    
-    <details>
-        <summary>Titulo del Acordeón</summary>
-        <article>
-            <h3>Contenido del Acordeón</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus quaerat quae dolore id ea at ad harum assumenda laudantium, sapiente quibusdam voluptatibus earum, mollitia quasi illo minima rem reiciendis!</p>
-            <img src="assets/images/duck.gif" alt="Pato caminando">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores architecto, culpa dolorum ipsum perspiciatis ad temporibus nulla qui! Dolores velit distinctio magnam cupiditate quidem voluptatem doloribus recusandae veritatis a quaerat!</p>
-        </article>
-    </details>
-    
-    <!-- Una ventana modal en HTML-->
+   <details>
+      <summary>Titulo del Acordeón</summary>
+      <article>
+         <h3>Contenido del Acordeón</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus quaerat quae dolore id ea at ad
+            harum assumenda laudantium, sapiente quibusdam voluptatibus earum, mollitia quasi illo minima rem
+            reiciendis!</p>
+         <img src="assets/images/duck.gif" alt="Pato caminando">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores architecto, culpa dolorum ipsum
+            perspiciatis ad temporibus nulla qui! Dolores velit distinctio magnam cupiditate quidem voluptatem doloribus
+            recusandae veritatis a quaerat!</p>
+      </article>
+   </details>
 
-    <dialog open>
-        Esto es una ventana modal en HTML
-    </dialog>    
-    <a href="#inicio">Inicio🔝</a>
+   <!-- Una ventana modal en HTML-->
 
-    <hr>
+   <dialog open>
+      Esto es una ventana modal en HTML
+   </dialog>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="audio-video"><u>Audio y Video</u></h3>
-    <!--Audio-->
-    <!-- Para que pueda ser visible necesitamos agregarle el atributo controls!-->
-    <h4 class="music-video">The Outfield - Your Love (Music)</h4>
+   <hr>
 
-    <!-- el atributo "autoplay" reproduce sin necesidad de controles -->
-    <!-- el atributo "loop" hara que se reproduzca el contenido nuevamente de manera automatica-->
-    <!-- el atributo "preload" hara que se descargue de manera automatica el archivo ni bien alguien entre
-        a nuestra página, esto hara que al momento de reproducir el audio, este ya este listo para escucharse.-->
-    <audio src="media/The_Outfield_-_Your_Love_Official_HD_Video_(youconvert.net).mp3" controls preload></audio>
-    
-    <h4 class="music-video">Peanuts Gang Singing "AC/DC - Back in Black" (Video)</h4>
+   <h3 id="audio-video"><u>Audio y Video</u></h3>
+   <!--Audio-->
+   <!-- Para que pueda ser visible necesitamos agregarle el atributo controls!-->
+   <h4 class="music-video">The Outfield - Your Love (Music)</h4>
 
-    <!-- a nuestro video le podemos colocar una miniatura colocando la propiedad "poster"-->
-    <video id="video" src="media/Peanuts Gang Singing _Back In Black_ by_ AC_DC.mp4" controls preload poster="assets/images/acdc.png"></video>
-    <br>
-    <a href="#inicio">Inicio🔝</a>
-    
-    <hr>
-    
-    <!-- Un iframe nos ayuda a cargar información de otro archivo o página y verla en nuestro archivo HTML-->
-    <!-- no hay que abusar tanto de los iframes (es recomendable solo tener uno por documento HTML)-->
-    <h3 id="iframes"><u>Iframes</u></h3>
-    <h4> <i>Un iframe carga información de otro archivo o página para poder verla en nuestro arhivo HTML (podemos utilizar tanto arhivos locales como externos)</i></h4>                                            
-    <iframe src="EnlaceEjemplo.html" frameborder="1"></iframe> <!-- el frameborder te da la opción de colocar un borde-->
-    
-    <h4>Conectando mi primer portafolio en Bootstrap con iframes</h4>
-    <iframe src="file:///C:/Users/JSamu/OneDrive/Documentos/MIS%20PROYECTOS%20WEB/Portafolio-Bootstrap/index.html" frameborder="1"></iframe>
+   <!-- el atributo "autoplay" reproduce sin necesidad de controles -->
+   <!-- el atributo "loop" hara que se reproduzca el contenido nuevamente de manera automatica-->
+   <!-- el atributo "preload" hara que se descargue de manera automatica el archivo ni bien alguien entre
+         a nuestra página, esto hara que al momento de reproducir el audio, este ya este listo para escucharse.-->
+   <audio src="media/The_Outfield_-_Your_Love_Official_HD_Video_(youconvert.net).mp3" controls preload></audio>
 
-    <h4>No todos los sitios se pueden mandar a llamar con iframes, debido a que estan protegidos.</h4>
-    <iframe src="https://facebook.com" frameborder="1"></iframe>
-    
-    <h4>PDF con todos los atajos EMMET (HTML, CSS , ETC)</h4>
-    <iframe src="media/emmet-cheat-sheet.pdf" frameborder="0"></iframe>
+   <h4 class="music-video">Peanuts Gang Singing "AC/DC - Back in Black" (Video)</h4>
 
-    <h4>Hay sitios que nos propocionan su "iframe" para poder mostrarlo en nuestra página. example : Google Maps, Youtube.</h4>
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4148478413877!2d-76.97727992581761!3d-12.083727088155957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c735783e43c5%3A0x2c62bd503a64b4d0!2sSchool%20of%20Rock!5e0!3m2!1sen!2spe!4v1724043822391!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <iframe width="300" height="300" src="https://www.youtube.com/embed/iKi5tH1Uj5M?si=7_ahnvkjXFv3Y_QH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <hr>
+   <!-- a nuestro video le podemos colocar una miniatura colocando la propiedad "poster"-->
+   <video id="video" src="media/Peanuts Gang Singing _Back In Black_ by_ AC_DC.mp4" controls preload
+      poster="assets/images/acdc.png"></video>
+   <br>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="formularios"><u>Elementos de Formulario</u></h3>
-    <!-- No vamos a ver el envio, para el envio y validaciones se necesita Javascript y CSS para el diseño-->
-    <!-- Aunque pareciera que los recuadros son iguales, no lo son, y cambian mucho a la hora de interactuar
-        y esto es más notorio en dispositivos táctiles.--> 
-    
-    <h3>Colocamos &lt;input type="(valor)"&gt;</h3>
-    
-    <h4>Texto (text)</h4>
-    <input type="text">
-    <br>
-    <h4>checkbox (checkbox)</h4>
-    <input type="checkbox">
-    <br>
-    <h4>Para escoger una unica opcion entre muchas (radio)</h4>
-    <input type="radio">
-    <br>
-    <h4>Fecha (date)</h4>
-    <input type="date">
-    <br>
-    <h4>Paleta de colores (color)</h4>
-    <input type="color">
-    <br>
-    <h4>Botón (button)</h4>
-    <input type="button" value="Botón">
-    <br>
-    <h4>Botón de envío (submit)</h4>
-    <input type="submit"> <!-- enviar los datos-->
-    <br>
-    <h4>Resetear el contenido colocado (reset)</h4>
-    <input type="reset"> <!-- elimina/resetea todos los datos que hayamos colocado en el formulario-->
-    <br>
-    <h4>Subir un archivo (file)</h4>
-    <input type="file"> <!-- para subir un archivo -->
-    <br>
-    <h4>Subir varios archivos (file) + atributo <span class="a">"multiple"</span> </h4>
-    <input type="file" multiple> <!-- el atributo "multiple" hara que podamos subir más de un archivo -->
-    <br>
-    <h4>Input escondido (hidden)</h4>
-    <input type="hidden" name="idioma" value="es">
-    <br>
-    <h4>Correo Eléctronico (email)</h4>
-    <input type="email">
-    <br>
-    <h4>Númerico (number)</h4>
-    <input type="number"> <!-- solo nos dejara ingresar números -->
-    <br>
-    <h4>Teléfono (tel)</h4>
-    <input type="tel">
-    <br>
-    <h4>Contraseña (password)</h4>
-    <input type="password">
-    <br>
-    <h4>Buscador (search)</h4>
-    <input type="search"> <!-- buscador -->
-    <br>
-    <h4>Zona de comentario con la etiqueta <u class="e">&lt;textarea&gt;</u></h4>
-    <textarea cols="50" rows="5"></textarea> <!-- para los comentarios-->  
-    <br>
-    <h4>Selector de opciones con etiqueta <u class="e">&lt;select&gt;</u> y dentro la etiqueta <u class="e">&lt;option&gt;</u> (una unica opción)</h4>
-    <select name="" id="">
-        <option value="">HTML</option>
-        <option value="">CSS</option>
-        <option value="">JS</option>
-    </select>
-    <br>
-    <h4>Selector de opciones <i>multiple</i> agregando el atributo <span class="a">"multiple"</span> </h4>
-    <select name="" id="" multiple> <!-- con el atributo multiple podremos escoger más de una opción-->
-        <option value="">HTML</option>
-        <option value="">CSS</option>
-        <option value="">JS</option>
-        <option value="">PHP</option>
-        <option value="">SWIFT</option>
-        <option value="">PYTHON</option>
-    </select>
-    <br>
-    <h4>Texto solo lectura y desabilitado para datos ya predefinidos con la ayuda de los atributos <span class="a">"readonly"</span> 
-        y <span class="a">"disabled"</span> <br> aunque con <span class="a">"disabled"</span> ya basta para tener este efecto.
-    </h4>
-    <input type="text" value="Samuel Salazar" disabled>
-    <br>
-    <h4>Propiedad <span class="a">"placeholder"</span>  para indicar al usuario qué debe introducir en el recuadro.</h4>
-    <input type="text" placeholder="Escribe tu nombre">
-    <a href="#inicio">Inicio🔝</a>
+   <hr>
 
-    <hr>
+   <!-- Un iframe nos ayuda a cargar información de otro archivo o página y verla en nuestro archivo HTML-->
+   <!-- no hay que abusar tanto de los iframes (es recomendable solo tener uno por documento HTML)-->
+   <h3 id="iframes"><u>Iframes</u></h3>
+   <h4> <i>Un iframe carga información de otro archivo o página para poder verla en nuestro arhivo HTML (podemos
+         utilizar tanto arhivos locales como externos)</i></h4>
+   <iframe src="EnlaceEjemplo.html" frameborder="1"></iframe> <!-- el frameborder te da la opción de colocar un borde-->
 
-    <h3 id="formulario"><u>Creación de Formulario</u></h3>
-    <h4>Formulario de login</h4>
-    <form action="" method="get" autocomplete="on"> <!-- autocomplete lo podemos utilizar en el form en general o en secciones especcificas-->
-        <!-- el "Method" predeterminado es "GET" en donde los valores se enviaran por URL-->
-        <!-- el atributo action nos dice a donde enviar toda la información -->
-        <!-- el atributo name sirve para darle un nombre a ese recuadro , de que es?. cuando se envien
+   <h4>Conectando mi primer portafolio en Bootstrap con iframes</h4>
+   <iframe src="file:///C:/Users/JSamu/OneDrive/Documentos/MIS%20PROYECTOS%20WEB/Portafolio-Bootstrap/index.html"
+      frameborder="1"></iframe>
+
+   <h4>No todos los sitios se pueden mandar a llamar con iframes, debido a que estan protegidos.</h4>
+   <iframe src="https://facebook.com" frameborder="1"></iframe>
+
+   <h4>PDF con todos los atajos EMMET (HTML, CSS , ETC)</h4>
+   <iframe src="media/emmet-cheat-sheet.pdf" frameborder="0"></iframe>
+
+   <h4>Hay sitios que nos propocionan su "iframe" para poder mostrarlo en nuestra página. example : Google Maps,
+      Youtube.</h4>
+
+   <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4148478413877!2d-76.97727992581761!3d-12.083727088155957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c735783e43c5%3A0x2c62bd503a64b4d0!2sSchool%20of%20Rock!5e0!3m2!1sen!2spe!4v1724043822391!5m2!1sen!2spe"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <iframe width="300" height="300" src="https://www.youtube.com/embed/iKi5tH1Uj5M?si=7_ahnvkjXFv3Y_QH"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <hr>
+
+   <h3 id="formularios"><u>Elementos de Formulario</u></h3>
+   <!-- No vamos a ver el envio, para el envio y validaciones se necesita Javascript y CSS para el diseño-->
+   <!-- Aunque pareciera que los recuadros son iguales, no lo son, y cambian mucho a la hora de interactuar
+         y esto es más notorio en dispositivos táctiles.-->
+
+   <h3>Colocamos &lt;input type="(valor)"&gt;</h3>
+
+   <h4>Texto (text)</h4>
+   <input type="text">
+   <br>
+   <h4>checkbox (checkbox)</h4>
+   <input type="checkbox">
+   <br>
+   <h4>Para escoger una unica opcion entre muchas (radio)</h4>
+   <input type="radio">
+   <br>
+   <h4>Fecha (date)</h4>
+   <input type="date">
+   <br>
+   <h4>Paleta de colores (color)</h4>
+   <input type="color">
+   <br>
+   <h4>Botón (button)</h4>
+   <input type="button" value="Botón">
+   <br>
+   <h4>Botón de envío (submit)</h4>
+   <input type="submit"> <!-- enviar los datos-->
+   <br>
+   <h4>Resetear el contenido colocado (reset)</h4>
+   <input type="reset"> <!-- elimina/resetea todos los datos que hayamos colocado en el formulario-->
+   <br>
+   <h4>Subir un archivo (file)</h4>
+   <input type="file"> <!-- para subir un archivo -->
+   <br>
+   <h4>Subir varios archivos (file) + atributo <span class="a">"multiple"</span> </h4>
+   <input type="file" multiple> <!-- el atributo "multiple" hara que podamos subir más de un archivo -->
+   <br>
+   <h4>Input escondido (hidden)</h4>
+   <input type="hidden" name="idioma" value="es">
+   <br>
+   <h4>Correo Eléctronico (email)</h4>
+   <input type="email">
+   <br>
+   <h4>Númerico (number)</h4>
+   <input type="number"> <!-- solo nos dejara ingresar números -->
+   <br>
+   <h4>Teléfono (tel)</h4>
+   <input type="tel">
+   <br>
+   <h4>Contraseña (password)</h4>
+   <input type="password">
+   <br>
+   <h4>Buscador (search)</h4>
+   <input type="search"> <!-- buscador -->
+   <br>
+   <h4>Zona de comentario con la etiqueta <u class="e">&lt;textarea&gt;</u></h4>
+   <textarea cols="50" rows="5"></textarea> <!-- para los comentarios-->
+   <br>
+   <h4>Selector de opciones con etiqueta <u class="e">&lt;select&gt;</u> y dentro la etiqueta <u
+         class="e">&lt;option&gt;</u> (una unica opción)</h4>
+   <select name="" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+   </select>
+   <br>
+   <h4>Selector de opciones <i>multiple</i> agregando el atributo <span class="a">"multiple"</span> </h4>
+   <select name="" id="" multiple> <!-- con el atributo multiple podremos escoger más de una opción-->
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+      <option value="">PHP</option>
+      <option value="">SWIFT</option>
+      <option value="">PYTHON</option>
+   </select>
+   <br>
+   <h4>Texto solo lectura y desabilitado para datos ya predefinidos con la ayuda de los atributos <span
+         class="a">"readonly"</span>
+      y <span class="a">"disabled"</span> <br> aunque con <span class="a">"disabled"</span> ya basta para tener este
+      efecto.
+   </h4>
+   <input type="text" value="Samuel Salazar" disabled>
+   <br>
+   <h4>Propiedad <span class="a">"placeholder"</span> para indicar al usuario qué debe introducir en el recuadro.</h4>
+   <input type="text" placeholder="Escribe tu nombre">
+   <a href="#inicio">Inicio🔝</a>
+
+   <hr>
+
+   <h3 id="formulario"><u>Creación de Formulario</u></h3>
+   <h4>Formulario de login</h4>
+   <form action="" method="get" autocomplete="on">
+      <!-- autocomplete lo podemos utilizar en el form en general o en secciones especcificas-->
+      <!-- el "Method" predeterminado es "GET" en donde los valores se enviaran por URL-->
+      <!-- el atributo action nos dice a donde enviar toda la información -->
+      <!-- el atributo name sirve para darle un nombre a ese recuadro , de que es?. cuando se envien
             los datos a página web estos seran enviados en forma de variables(el valor que le pusiste a "name")
             más el valor que se colocó. Ademas podemos identificar que hay más variables en una URL porque
             estan separadas de un " & " (amspersand) que nos dice que hay otra variable con datos-->
 
-            <!-- Ejemplo : https://samigod.com/?usuario=programar32&password=8281928--> <!-- asi se varan los datos enviados-->
-        
-        <label for="usuario">Usuario:</label> <!-- la etiqueta label coloca un texto al costado del formulario 
-        comentando de que es. el atributo "for" vincula ese texto con el formulario traves de un ID-->
-        <input type="text" name="usuario" id="usuario" placeholder="Intruduce tu Usuario" pattern="^[A-Za-z]+$" 
-        title="El campo solo admite letras" required>        
-        <!--cirunflejo : alt gr + (su boton)-->  <!-- "patter" es donde colocamos una "expresión regular"
+      <!-- Ejemplo : https://samigod.com/?usuario=programar32&password=8281928-->
+      <!-- asi se varan los datos enviados-->
+
+      <label for="usuario">Usuario:</label> <!-- la etiqueta label coloca un texto al costado del formulario 
+         comentando de que es. el atributo "for" vincula ese texto con el formulario traves de un ID-->
+      <input type="text" name="usuario" id="usuario" placeholder="Intruduce tu Usuario" pattern="^[A-Za-z]+$"
+         title="El campo solo admite letras" required>
+      <!--cirunflejo : alt gr + (su boton)--> <!-- "patter" es donde colocamos una "expresión regular"
             que es una restricción, en este caso en aquel campo solo se permitiran letras Mayusculas o Minusculas-->
-        <!-- el atributo "title" agrega un mensaje al recuadro del requerimiento-->
-    <!-- el atributo "required" no dejara enviar nada hasta que se rellene dicho campo y se cumpla con las restricciones.-->
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Correo Eléctronico" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Introduce tu Contraseña" required>
-        <br>
-        <input type="submit">
-        <br>
-        <input type="reset">
-    </form>
-    <h4>Selects, Radios, y Checkbox</h4>
-    <form>
-        <p>Elige tu idioma</p>
-        <select name="idioma" required> <!-- tambien podemos agregar el atributo "Multiple"-->
-            <option value="">Elige una opción</option>
-            <option value="es">Español</option> <!-- podemos utilizar el atributo "selected" para que dicha opción este seleccionada predeterminadamente-->
-            <option value="en">Inglés</option>   
-            <option value="fr">Francés</option>
-            <option value="it">Italiano</option>
-            <option value="pt">Portugues</option>
-        </select>
-        <p>Lenguaje de Programación favorito</p> 
-        <input type="radio" name="lenguaje" id="radio-js" value="js"> <!-- podemos utilizar el atributo "checked" para marcas una de las opciones de menra predeterminada -->
-        <label for="radio-js">Javascript</label>
-        <input type="radio" name="lenguaje" id="radio-php" value="php" required>
-        <label for="radio-php">PHP</label>
-        <input type="radio" name="lenguaje" id="radio-py" value="py">
-        <label for="radio-py">Python</label>
-        <p>Elige tus intereses</p>
-        <label>
-            <input type="checkbox" name="intereses" value="deportes">Deportes
-        </label>
-        <label>
-            <input type="checkbox" name="intereses" value="finanzas">Finanzas
-        </label>
-        <label>
-            <input type="checkbox" name="intereses" value="tecnologia">Tecnologia
-        </label>
-        <label>
-            <input type="checkbox" name="intereses" value="politica">Politica
-        </label>
-        <label>
-            <input type="checkbox" name="intereses" value="ecologia">Ecologia
-        </label>
-        <label>
-            <input type="checkbox" name="terminos" required>
-            ¿Aceptas los terminos y condiciones?
-        </label>
-        <input type="submit">
-        <input type="reset">
-    </form>
+      <!-- el atributo "title" agrega un mensaje al recuadro del requerimiento-->
+      <!-- el atributo "required" no dejara enviar nada hasta que se rellene dicho campo y se cumpla con las restricciones.-->
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Correo Eléctronico" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Introduce tu Contraseña" required>
+      <br>
+      <input type="submit">
+      <br>
+      <input type="reset">
+   </form>
+   <h4>Selects, Radios, y Checkbox</h4>
+   <form>
+      <p>Elige tu idioma</p>
+      <select name="idioma" required> <!-- tambien podemos agregar el atributo "Multiple"-->
+         <option value="">Elige una opción</option>
+         <option value="es">Español</option>
+         <!-- podemos utilizar el atributo "selected" para que dicha opción este seleccionada predeterminadamente-->
+         <option value="en">Inglés</option>
+         <option value="fr">Francés</option>
+         <option value="it">Italiano</option>
+         <option value="pt">Portugues</option>
+      </select>
+      <p>Lenguaje de Programación favorito</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js">
+      <!-- podemos utilizar el atributo "checked" para marcas una de las opciones de menra predeterminada -->
+      <label for="radio-js">Javascript</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php" required>
+      <label for="radio-php">PHP</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py">
+      <label for="radio-py">Python</label>
+      <p>Elige tus intereses</p>
+      <label>
+         <input type="checkbox" name="intereses" value="deportes">Deportes
+      </label>
+      <label>
+         <input type="checkbox" name="intereses" value="finanzas">Finanzas
+      </label>
+      <label>
+         <input type="checkbox" name="intereses" value="tecnologia">Tecnologia
+      </label>
+      <label>
+         <input type="checkbox" name="intereses" value="politica">Politica
+      </label>
+      <label>
+         <input type="checkbox" name="intereses" value="ecologia">Ecologia
+      </label>
+      <label>
+         <input type="checkbox" name="terminos" required>
+         ¿Aceptas los terminos y condiciones?
+      </label>
+      <input type="submit">
+      <input type="reset">
+   </form>
 
-    <!-- resultado : file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?idioma=it#formulario-->
-        <!-- como vemos se nos enviaran los datos con una URL, mostrandonos el "value" de esa opción escogida-->
-    <a href="#inicio">Inicio🔝</a>
+   <!-- resultado : file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?idioma=it#formulario-->
+   <!-- como vemos se nos enviaran los datos con una URL, mostrandonos el "value" de esa opción escogida-->
+   <a href="#inicio">Inicio🔝</a>
 
-    <hr>
+   <hr>
 
-    <h3 id="formulario-contacto"><u>Formulario de Contácto</u></h3>
-    <h4>100% Funcional con ayuda de Formsubmit</h4>
-    <!-- https://formsubmit.co/your@email.com -->
-    <!-- para que funcione nuestro archivo HTML debe estar subido a la web, si no tenemos la posibilidad
-        de subirlo podemos usar la extensión "Live Server", ademas necesitamos tener el atributo
-        "name" en nuestro input para reconocer la información de cada input-->
-    <!-- Creando un formulario de contácto 100% funcional con la API de Formsubmit-->
-    <form action="https://formsubmit.co/widosrevel@gmail.com" method="post"> 
-        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-        title="Nombre sólo acepta letras y espacios en blanco" required> <!-- la expresión regular
-        valida si se cumplen los requisitos de "pattern" -->
-        <br>
-        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
-        title="Formato de correo inválido" required> <!-- este expresión regular valida si se cumplen con lo pedido en "Pattern" para un correo electronico-->
-        <br>
-        <textarea name="comentarios" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit">
-        <br>
-        <input type="reset">
-        <!-- (si funcionó) file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?nombre=Juan+Samuel+Salazar+Alarc%C3%B3n&correo=widosrevel%40gmail.com&comentarios=Me+gusto%21#formulario-->
-        
-    </form>
+   <h3 id="formulario-contacto"><u>Formulario de Contácto</u></h3>
+   <h4>100% Funcional con ayuda de Formsubmit</h4>
+   <!-- https://formsubmit.co/your@email.com -->
+   <!-- para que funcione nuestro archivo HTML debe estar subido a la web, si no tenemos la posibilidad
+         de subirlo podemos usar la extensión "Live Server", ademas necesitamos tener el atributo
+         "name" en nuestro input para reconocer la información de cada input-->
+   <!-- Creando un formulario de contácto 100% funcional con la API de Formsubmit-->
+   <form action="https://formsubmit.co/widosrevel@gmail.com" method="post">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+         title="Nombre sólo acepta letras y espacios en blanco" required> <!-- la expresión regular
+         valida si se cumplen los requisitos de "pattern" -->
+      <br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+         title="Formato de correo inválido" required>
+      <!-- este expresión regular valida si se cumplen con lo pedido en "Pattern" para un correo electronico-->
+      <br>
+      <textarea name="comentarios" cols="30" rows="10"></textarea>
+      <br>
+      <input type="submit">
+      <br>
+      <input type="reset">
+      <!-- (si funcionó) file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?nombre=Juan+Samuel+Salazar+Alarc%C3%B3n&correo=widosrevel%40gmail.com&comentarios=Me+gusto%21#formulario-->
 
-    <a href="#inicio">Inicio🔝</a>
+   </form>
 
-    <hr>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="data-atri"> <u>Data Attributes</u></h3> 
-    <!-- la regla que debemos respetar que es que nuestro atributo inventado comience con 
-        "data-" + (el nombre que querramos) ejem:  data-nuevo -->
-                    <!-- lo visible para el usuario lo podemos colocar en Español, pero los valores
-                    de nuestros atributos preferiblemente los debemos colocar en Inglés-->
-        <ul>             
-        <li data-id="1" data-name="spring">Primavera</li>
-        <li data-id="2" data-name="summer">Verano</li>
-        <li data-id="3" data-name="autumm">Otoño</li>
-        <li data-id="4" data-name="winter">Invierno</li>
-    </ul>
-    <a href="#inicio">Inicio🔝</a>
+   <hr>
 
-    <hr>
+   <h3 id="data-atri"> <u>Data Attributes</u></h3>
+   <!-- la regla que debemos respetar que es que nuestro atributo inventado comience con 
+      "data-" + (el nombre que querramos) ejem:  data-nuevo -->
+   <!-- lo visible para el usuario lo podemos colocar en Español, pero los valores
+                  de nuestros atributos preferiblemente los debemos colocar en Inglés-->
+   <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumm">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+   </ul>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="metas-seo">MetaEtiquetas para SEO</h3>
-    
-    
-    
-    <a href="#inicio">Inicio🔝</a>
+   <hr>
 
-    <hr>
+   <h3 id="metas-seo">MetaEtiquetas para SEO</h3>
+   <a href="#inicio">Inicio🔝</a>
 
-    <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
-    <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
-    <!-- Con esto podemos hacer un acordeón interactivo sin ayuda de javascrip !-->  
-    <h4>#1 Mediante la etiqueta <span class="e">&lt;script&gt;</span>  al final antes del cierre de <span class="e">&lt;body&gt;</span>  (Buena practica)</h4>
-    <script>
-        console.log("Hola estamos aprendiendo HTML");
-    </script>
+   <hr>
 
-    <h4>#2 Mediante un archivo aparte JS (Buena practica y más organizado)</h4>
-    <a href="#inicio">Inicio🔝</a>
+   <h3 id="acc-web">Accesibilidad WEB</h3>
+   <!-- Sirve para darle una mejor experiencia a personas con varios tipos de discapacidad
+      aveces las empresas no le dan tanta importancia, pero dependera de nuestra ética.
+      (consejo) : añadir estas funcionalidades en partes de código importantes-->
+   <h4 role="title">Las estaciones del Año</h4>
+   <ul role="list"> <!-- alt - click sobre las lineas en donde quieras escribir a la vez-->
+      <li tabindex="1" role="listitem">Primavera</li>
+      <li tabindex="2" role="listitem">Verano</li>
+      <li tabindex="3" role="listitem">Otoño</li>
+      <li tabindex="4" role="listitem">Invierno</li>
+   </ul>
+   <a role="link" aria-label="En este enlace encontraras más información sobre las estaciones del año" href="#"
+      target="_blank">Más información...</a>
+   <a href="#inicio">Inicio🔝</a>
+
+   <hr>
+
+   <h3 id="scripts"><u>Scripts </u> en <u>HTML</u></h3>
+   <!-- estos deben ir en la parte final del código antes del cierre de la etiqueta body-->
+   <!-- Con esto podemos hacer un acordeón interactivo sin ayuda de javascrip !-->
+   <h4>#1 Mediante la etiqueta <span class="e">&lt;script&gt;</span> al final antes del cierre de <span
+         class="e">&lt;body&gt;</span> (Buena practica)</h4>
+   <script>
+      console.log("Hola estamos aprendiendo HTML");
+   </script>
+
+   <h4>#2 Mediante un archivo aparte JS (Buena practica y más organizado)</h4>
+   <a href="#inicio">Inicio🔝</a>
 
 </body>
 
 
-</html> 
+</html>
