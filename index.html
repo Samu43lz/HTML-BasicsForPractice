@@ -61,6 +61,8 @@
             <li><a href="#iframes">Iframes</a></li>
             <li><a href="#formularios">Elementos de Formulario</a></li>
             <li><a href="#formulario">Creación de Formulario</a></li>
+            <li><a href="#formulario-contacto">Formulario de Contácto</a></li>
+            <li><a href="#data-atri">Data Attributes</a></li>
         </ul>
         <!--</ul>  el no cerrar la etiqueta "ul" le da una apariencia más bonita xd--> 
     <hr>
@@ -591,7 +593,7 @@
     
     <hr>
 
-    <h3 id="formularios">Elementos de Formulario</h3>
+    <h3 id="formularios"><u>Elementos de Formulario</u></h3>
     <!-- No vamos a ver el envio, para el envio y validaciones se necesita Javascript y CSS para el diseño-->
     <!-- Aunque pareciera que los recuadros son iguales, no lo son, y cambian mucho a la hora de interactuar
         y esto es más notorio en dispositivos táctiles.--> 
@@ -677,7 +679,7 @@
 
     <hr>
 
-    <h3 id="formulario">Creación de Formulario</h3>
+    <h3 id="formulario"><u>Creación de Formulario</u></h3>
     <h4>Formulario de login</h4>
     <form action="" method="get" autocomplete="on"> <!-- autocomplete lo podemos utilizar en el form en general o en secciones especcificas-->
         <!-- el "Method" predeterminado es "GET" en donde los valores se enviaran por URL-->
@@ -753,6 +755,48 @@
     <!-- resultado : file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?idioma=it#formulario-->
         <!-- como vemos se nos enviaran los datos con una URL, mostrandonos el "value" de esa opción escogida-->
     <a href="#inicio">Inicio🔝</a>
+
+    <hr>
+
+    <h3 id="formulario-contacto"><u>Formulario de Contácto</u></h3>
+    <h4>100% Funcional con ayuda de Formsubmit</h4>
+    <!-- https://formsubmit.co/your@email.com -->
+    <!-- para que funcione nuestro archivo HTML debe estar subido a la web, si no tenemos la posibilidad
+        de subirlo podemos usar la extensión "Live Server", ademas necesitamos tener el atributo
+        "name" en nuestro input para reconocer la información de cada input-->
+    <!-- Creando un formulario de contácto 100% funcional con la API de Formsubmit-->
+    <form action="https://formsubmit.co/widosrevel@gmail.com" method="post"> 
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta letras y espacios en blanco" required> <!-- la expresión regular
+        valida si se cumplen los requisitos de "pattern" -->
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Formato de correo inválido" required> <!-- este expresión regular valida si se cumplen con lo pedido en "Pattern" para un correo electronico-->
+        <br>
+        <textarea name="comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+        <!-- (si funcionó) file:///C:/Users/JSamu/OneDrive/Documentos/HTML/index.html?nombre=Juan+Samuel+Salazar+Alarc%C3%B3n&correo=widosrevel%40gmail.com&comentarios=Me+gusto%21#formulario-->
+        
+    </form>
+
+    <a href="#inicio">Inicio🔝</a>
+
+    <hr>
+
+    <h3 id="data-atri"> <u>Data Attributes</u></h3> 
+    <!-- la regla que debemos respetar que es que nuestro atributo inventado comience con 
+        "data-" + (el nombre que querramos) ejem:  data-nuevo -->
+                    <!-- lo visible para el usuario lo podemos colocar en Español, pero los valores
+                    de nuestros atributos preferiblemente los debemos colocar en Inglés-->
+        <ul>             
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumm">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
 
     <hr>
 
